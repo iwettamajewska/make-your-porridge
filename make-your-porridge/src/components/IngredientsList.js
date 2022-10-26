@@ -1,7 +1,7 @@
 import React from "react";
 import IngredientCheckbox from "./IngredientCheckbox";
 
-const IngredientsList = ({ value, onChange, checked }) => {
+const IngredientsList = ({ onChange, checked, noChecked }) => {
   return (
     <>
       <p>choose ingredients</p>
@@ -9,7 +9,7 @@ const IngredientsList = ({ value, onChange, checked }) => {
         <IngredientCheckbox
           name={"yoghurt"}
           value={"yoghurt"}
-          checked={checked}
+          checked={noChecked}
           onChange={onChange}
           htmlFor={"yoghurt"}
           labelText={"yoghurt"}
