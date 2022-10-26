@@ -1,6 +1,4 @@
-import React from "react";
-
-const ingredients = [
+export const ingredients = [
   {
     name: "yoghurt",
     kcal: 100,
@@ -146,9 +144,3 @@ const ingredients = [
     polyphenoles: 5,
   },
 ];
-
-const IngredientsDescription = () => {
-  return <></>;
-};
-
-export default IngredientsDescription;
