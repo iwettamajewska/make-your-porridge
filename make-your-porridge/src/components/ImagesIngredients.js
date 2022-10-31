@@ -1,9 +1,9 @@
 import { images } from "../images/images";
 
-const ImageIngredients = () => {
+const ImageIngredients = ({ bowl }) => {
   return (
     <>
-      <img
+      {/* <img
         src={images.yoghurt}
         className="strawberries image"
         alt="strawberries"
@@ -33,7 +33,16 @@ const ImageIngredients = () => {
         src={images.chiaSeeds}
         className="chia-seeds image"
         alt="chiaSeeds"
-      />
+      /> */}
+      {bowl.map((item, index) => (
+        <img
+          src={images[item.name]}
+          className="cow-milk image"
+          alt="cow-milk"
+          key={index}
+        />
+      ))}
+      ;
     </>
   );
 };

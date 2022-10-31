@@ -1,3 +1,5 @@
+// import { images } from "../../images/images";
+
 export const ingredients = [
   {
     name: "yoghurt",
@@ -10,6 +12,7 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    // imageUrl: images.yoghurt,
   },
   {
     name: "cow milk",
@@ -22,6 +25,7 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    // imageUrl: images.cowMilk,
   },
   {
     name: "rice milk",
@@ -34,6 +38,7 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    // imageUrl: images.riceMilk,
   },
   {
     name: "banana",
@@ -46,6 +51,7 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    // imageUrl: images.banana,
   },
   {
     name: "apple",
@@ -58,6 +64,7 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    // imageUrl: images.apple,
   },
   {
     name: "orange",
@@ -70,6 +77,7 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    // imageUrl: images.orange,
   },
   {
     name: "strawberries",
@@ -82,6 +90,7 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    // imageUrl: images.strawberries,
   },
   {
     name: "blueberries",
@@ -94,6 +103,7 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    // imageUrl: images.blueberries,
   },
   {
     name: "raspberries",
@@ -106,6 +116,7 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    // imageUrl: images.raspberries,
   },
   {
     name: "walnut",
@@ -118,6 +129,7 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    // imageUrl: images.walnut,
   },
   {
     name: "cashew",
@@ -130,6 +142,7 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    // imageUrl: images.cashew,
   },
   {
     name: "chia seeds",
@@ -142,5 +155,19 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    // imageUrl: images.chiaSeeds
   },
 ];
+
+// title: "yoghurt",
+// title: "cow milk",
+// title: "rice milk",
+// title: "banana",
+// title: "apple",
+// title: "orange",
+// title: "strawberries",
+// title: "blueberries",
+// title: "raspberries",
+// title: "walnut",
+// title: "cashew",
+// title: "chia seeds",

@@ -1,20 +1,24 @@
 import IngredientCheckbox from "./IngredientCheckbox";
 import { ingredients } from "./data/ingredients";
-import { useState } from "react";
 
-const IngredientsList = ({ onChange, checked, noChecked }) => {
+const IngredientsList = ({ onChange, checked, noChecked, setBowl, bowl }) => {
+  const handleOnChange = (event, item) => {
+    onChange(event);
+    setBowl([...bowl, item]);
+  };
+
   return (
     <>
       <p>choose ingredients</p>
       <form className="food-select">
-        {ingredients.map(({ name, index }) => (
+        {ingredients.map(({ item, index }) => (
           <IngredientCheckbox
-            name={name}
-            value={name}
+            name={item.name}
+            value={item.name}
             checked={checked}
-            onChange={onChange}
-            htmlFor={name}
-            labelText={name}
+            onChange={(event) => handleOnChange(event, item)}
+            htmlFor={item.name}
+            labelText={item.name}
             key={index}
           />
         ))}
