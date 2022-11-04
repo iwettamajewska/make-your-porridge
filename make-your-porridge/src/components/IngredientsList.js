@@ -16,6 +16,7 @@ const IngredientsList = ({ onChange, checked, noChecked, setBowl, bowl }) => {
             name={item.name}
             value={item.name}
             checked={checked}
+            noChecked={noChecked}
             onChange={(event) => handleOnChange(event, item)}
             htmlFor={item.name}
             labelText={item.name}
