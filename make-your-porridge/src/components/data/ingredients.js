@@ -51,6 +51,8 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    // className: "test",
+    // alt: "test",
     // imageUrl: images.banana,
   },
   {

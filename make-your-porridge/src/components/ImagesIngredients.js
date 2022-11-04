@@ -37,12 +37,13 @@ const ImageIngredients = ({ bowl }) => {
       {bowl.map((item, index) => (
         <img
           src={images[item.name]}
-          className="cow-milk image"
-          alt="cow-milk"
+          // className={images.className}
+          // alt={images[item.alt]}
+          // className="cow-milk image"
+          // alt="cow-milk"
           key={index}
         />
       ))}
-      ;
     </>
   );
 };

@@ -11,7 +11,7 @@ const IngredientsList = ({ onChange, checked, noChecked, setBowl, bowl }) => {
     <>
       <p>choose ingredients</p>
       <form className="food-select">
-        {ingredients.map(({ item, index }) => (
+        {ingredients.map((item, index) => (
           <IngredientCheckbox
             name={item.name}
             value={item.name}
