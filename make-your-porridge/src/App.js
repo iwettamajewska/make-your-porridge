@@ -61,6 +61,11 @@ function App() {
     setChecked(e.target.value);
   };
 
+  const getNoChecked = (e) => {
+    // console.log(e.target.value);
+    // setChecked(e.target.value);
+  };
+
   // const getNoChecked = (e) = {
   //   setTasks(tasks.filter(item => item !== task));
   //   console.log(e.target.value);
@@ -74,7 +79,7 @@ function App() {
       <h1>Make your perfect porridge</h1>
       <IngredientsList
         onChange={getChecked}
-        // noChecked={getNoChecked}
+        // // // noChecked={getNoChecked}
         setBowl={setBowl}
         bowl={bowl} /* {checked ? checkedText : uncheckedText} */
       />
