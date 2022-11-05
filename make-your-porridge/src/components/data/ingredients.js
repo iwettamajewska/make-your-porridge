@@ -3,6 +3,7 @@
 export const ingredients = [
   {
     name: "yoghurt",
+    class: "yoghurt",
     kcal: 100,
     protein: 20,
     carbohydrates: 19,
@@ -16,6 +17,7 @@ export const ingredients = [
   },
   {
     name: "cow milk",
+    class: "cow-milk",
     kcal: 200,
     protein: 40,
     carbohydrates: 19,
@@ -29,6 +31,7 @@ export const ingredients = [
   },
   {
     name: "rice milk",
+    class: "rice-milk",
     kcal: 450,
     protein: 20,
     carbohydrates: 19,
@@ -42,6 +45,7 @@ export const ingredients = [
   },
   {
     name: "banana",
+    class: "banana",
     kcal: 870,
     protein: 20,
     carbohydrates: 19,
@@ -57,6 +61,7 @@ export const ingredients = [
   },
   {
     name: "apple",
+    class: "apple",
     kcal: 4,
     protein: 20,
     carbohydrates: 19,
@@ -70,6 +75,7 @@ export const ingredients = [
   },
   {
     name: "orange",
+    class: "orange",
     kcal: 24,
     protein: 20,
     carbohydrates: 19,
@@ -83,6 +89,7 @@ export const ingredients = [
   },
   {
     name: "strawberries",
+    class: "strawberries",
     kcal: 42,
     protein: 20,
     carbohydrates: 19,
@@ -96,6 +103,7 @@ export const ingredients = [
   },
   {
     name: "blueberries",
+    class: "blueberries",
     kcal: 85,
     protein: 20,
     carbohydrates: 19,
@@ -109,6 +117,7 @@ export const ingredients = [
   },
   {
     name: "raspberries",
+    class: "raspberries",
     kcal: 98,
     protein: 20,
     carbohydrates: 19,
@@ -122,6 +131,7 @@ export const ingredients = [
   },
   {
     name: "walnut",
+    class: "walnut",
     kcal: 999,
     protein: 20,
     carbohydrates: 19,
@@ -135,6 +145,7 @@ export const ingredients = [
   },
   {
     name: "cashew",
+    class: "cashew",
     kcal: 888,
     protein: 20,
     carbohydrates: 19,
@@ -148,6 +159,7 @@ export const ingredients = [
   },
   {
     name: "chia seeds",
+    class: "chia-seeds",
     kcal: 555,
     protein: 20,
     carbohydrates: 19,

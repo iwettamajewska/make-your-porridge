@@ -39,9 +39,13 @@ const ImageIngredients = ({ bowl }) => {
           src={images[item.name]}
           // className={images.className}
           // alt={images[item.alt]}
-          className="cow-milk image"
-          alt="cow-milk"
+          className={[item.class + " image"]}
+          alt={item.class}
+          // className="cow-milk image"
+          // alt="cow-milk"
           key={index}
+          // className={[item.class + " image"]} <-- tu coś nie tak jest
+          // alt={[item.class]}
         />
       ))}
     </>
