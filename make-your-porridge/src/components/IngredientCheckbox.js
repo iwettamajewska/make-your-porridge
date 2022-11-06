@@ -22,3 +22,5 @@ const IngredientCheckbox = ({
 };
 
 export default IngredientCheckbox;
+
+// https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/

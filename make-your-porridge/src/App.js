@@ -2,11 +2,23 @@ import "./App.css";
 import ImageIngredients from "./components/ImagesIngredients";
 import IngredientsList from "./components/IngredientsList";
 import { useState } from "react";
+// import { ingredients } from "./components/data/ingredients";
 
 function App() {
   const [checked, setChecked] = useState(false);
+  // const [checked, setChecked] = useState(
+  //   new Array(ingredients.length).fill(false)
+  // );
   const [bowl, setBowl] = useState([]); // to jest nasza miska z owsianką
   // console.log(bowl);
+
+  // const getChecked = (position) => {
+  //   const updatedCheckedState = checked.map((item, index) =>
+  //     index === position ? !item : item
+  //   );
+  // };
+
+  // setChecked(updatedCheckedState);
 
   const calories = bowl.reduce((acc, item) => {
     return acc + item.kcal;
@@ -61,10 +73,15 @@ function App() {
     setChecked(e.target.value);
   };
 
-  const getNoChecked = (e) => {
-    // console.log(e.target.value);
-    // setChecked(e.target.value);
-  };
+  // const getNoChecked = (e) => {
+  //   bowl.pop(e.target.value);
+  //   getNoChecked(bowl);
+  // };
+
+  // const getNoChecked = (e) => {
+  // console.log(e.target.value);
+  // setChecked(e.target.value);
+  // };
 
   // const getNoChecked = (e) = {
   //   setTasks(tasks.filter(item => item !== task));
@@ -79,6 +96,8 @@ function App() {
       <h1>Make your perfect porridge</h1>
       <IngredientsList
         onChange={getChecked}
+        // noChecked={getNoChecked}
+        // checked={checked}
         // // // noChecked={getNoChecked}
         setBowl={setBowl}
         bowl={bowl} /* {checked ? checkedText : uncheckedText} */
