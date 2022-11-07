@@ -2,6 +2,7 @@ import "./App.css";
 import ImageIngredients from "./components/ImagesIngredients";
 import IngredientsList from "./components/IngredientsList";
 import { useState } from "react";
+import NutritionTable from "./components/NutritionTable";
 // import { ingredients } from "./components/data/ingredients";
 
 function App() {
@@ -20,10 +21,11 @@ function App() {
 
   // setChecked(updatedCheckedState);
 
-  const calories = bowl.reduce((acc, item) => {
+  //////////////////
+  const amountKcal = bowl.reduce((acc, item) => {
     return acc + item.kcal;
   }, 0);
-  console.log(calories);
+  console.log(amountKcal);
 
   const amountProtein = bowl.reduce((acc, item) => {
     return acc + item.protein;
@@ -60,10 +62,7 @@ function App() {
   }, 0);
   console.log(amountPotassium);
 
-  const amountPolyphenoles = bowl.reduce((acc, item) => {
-    return acc + item.polyphenoles;
-  }, 0);
-  console.log(amountPolyphenoles);
+  ////////////////
 
   // zaznacza checkboxa
   // 1 przekazujemy sobie aktualny stan miski, 2 przekazuję również elemnt, który został już kliknięty ale jako cały object
@@ -103,6 +102,29 @@ function App() {
         bowl={bowl} /* {checked ? checkedText : uncheckedText} */
       />
       <ImageIngredients bowl={bowl} />
+      {/* <NutritionTable
+        amountKcal={amountKcal}
+        amountProtein={amountProtein}
+        amountCarbohydrates={amountCarbohydrates}
+        amountFat={amountFat}
+        amountFiber={amountFiber}
+        amountVitaminC={amountVitaminC}
+        amountCalcium={amountCalcium}
+        amountPotassium={amountPotassium}
+        amountPolyphenoles={amountPolyphenoles}
+        setBowl={setBowl}
+        bowl={bowl}
+      /> */}
+      <NutritionTable
+        amountKcal={amountKcal}
+        amountProtein={amountProtein}
+        amountCarbohydrates={amountCarbohydrates}
+        amountFat={amountFat}
+        amountFiber={amountFiber}
+        amountVitaminC={amountVitaminC}
+        amountCalcium={amountCalcium}
+        amountPotassium={amountPotassium}
+      />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,14 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.nutrition-data {
+  margin: 1rem;
+}
+
+.nutrition-name {
+  border-bottom: 1px solid gray;
+  font-weight: 500;
+  width: 70%;
 }

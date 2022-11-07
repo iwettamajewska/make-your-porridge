@@ -54,7 +54,6 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
-    polyphenoles: 5,
     // className: "test",
     // alt: "test",
     // imageUrl: images.banana,
@@ -70,7 +69,6 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
-    polyphenoles: 5,
     // imageUrl: images.apple,
   },
   {
@@ -84,7 +82,6 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
-    polyphenoles: 5,
     // imageUrl: images.orange,
   },
   {
@@ -98,7 +95,6 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
-    polyphenoles: 5,
     // imageUrl: images.strawberries,
   },
   {
@@ -112,7 +108,6 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
-    polyphenoles: 5,
     // imageUrl: images.blueberries,
   },
   {
@@ -126,7 +121,6 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
-    polyphenoles: 5,
     // imageUrl: images.raspberries,
   },
   {
@@ -140,7 +134,6 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
-    polyphenoles: 5,
     // imageUrl: images.walnut,
   },
   {
@@ -154,7 +147,6 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
-    polyphenoles: 5,
     // imageUrl: images.cashew,
   },
   {
@@ -168,7 +160,6 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
-    polyphenoles: 5,
     // imageUrl: images.chiaSeeds
   },
 ];
