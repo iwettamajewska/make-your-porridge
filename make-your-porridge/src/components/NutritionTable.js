@@ -21,7 +21,7 @@ const NutritionTable = ({
             <th className="nutrition-data">Carbohydrates</th>
             <th className="nutrition-data">Fat</th>
             <th className="nutrition-data">Fiber</th>
-            <th className="nutrition-data">VitaminC</th>
+            <th className="nutrition-data">Vitamin C</th>
             <th className="nutrition-data">Calcium</th>
             <th className="nutrition-data">Potassium</th>
           </tr>
