@@ -11,27 +11,35 @@ const NutritionTable = ({
   amountPotassium,
 }) => {
   return (
-    <div>
+    <>
       <p>your porridge contains:</p>
-      <div className="nutrition-name">
-        <span className="nutrition-data">Kcal</span>
-        <span className="nutrition-data">Protein</span>
-        <span className="nutrition-data">Carbohydrates</span>
-        <span className="nutrition-data">Fat</span>
-        <span className="nutrition-data">Fiber</span>
-        <span className="nutrition-data">VitaminC</span>
-        <spa className="nutrition-data">Calcium</spa>
-        <span className="nutrition-data">Potassium</span>
-      </div>
-      <span className="nutrition-data">{amountKcal} kcal</span>
-      <span className="nutrition-data">{amountProtein} g</span>
-      <span className="nutrition-data">{amountCarbohydrates} g</span>
-      <span className="nutrition-data">{amountFat} g</span>
-      <span className="nutrition-data">{amountFiber} g</span>
-      <span className="nutrition-data">{amountVitaminC} mg</span>
-      <span className="nutrition-data">{amountCalcium} mg</span>
-      <span className="nutrition-data">{amountPotassium} mg</span>
-    </div>
+      <table>
+        <thead>
+          <tr className="nutrition-name">
+            <span className="nutrition-data">Kcal</span>
+            <span className="nutrition-data">Protein</span>
+            <span className="nutrition-data">Carbohydrates</span>
+            <span className="nutrition-data">Fat</span>
+            <span className="nutrition-data">Fiber</span>
+            <span className="nutrition-data">VitaminC</span>
+            <span className="nutrition-data">Calcium</span>
+            <span className="nutrition-data">Potassium</span>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <span className="nutrition-data">{amountKcal} kcal</span>
+            <span className="nutrition-data">{amountProtein} g</span>
+            <span className="nutrition-data">{amountCarbohydrates} g</span>
+            <span className="nutrition-data">{amountFat} g</span>
+            <span className="nutrition-data">{amountFiber} g</span>
+            <span className="nutrition-data">{amountVitaminC} mg</span>
+            <span className="nutrition-data">{amountCalcium} mg</span>
+            <span className="nutrition-data">{amountPotassium} mg</span>
+          </tr>
+        </tbody>
+      </table>
+    </>
   );
 };
 

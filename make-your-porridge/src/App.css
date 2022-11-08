@@ -36,8 +36,11 @@
     transform: rotate(360deg);
   }
 } */
+* {
+  font-size: 16px;
+}
 
-.nutrition-data {
+/* .nutrition-data {
   margin: 1rem;
 }
 
@@ -45,4 +48,31 @@
   border-bottom: 1px solid gray;
   font-weight: 500;
   width: 70%;
+}
+
+.nutrition-data {
+  width: 8rem;
+  text-align: center;
+  width: 1000px;
+  margin: 2rem;
+} */
+
+/* table,
+td,
+tr {
+  border: 1px solid black;
+} */
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+}
+
+table {
+  width: 100%;
 }
