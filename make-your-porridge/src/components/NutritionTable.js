@@ -16,26 +16,26 @@ const NutritionTable = ({
       <table>
         <thead>
           <tr className="nutrition-name">
-            <span className="nutrition-data">Kcal</span>
-            <span className="nutrition-data">Protein</span>
-            <span className="nutrition-data">Carbohydrates</span>
-            <span className="nutrition-data">Fat</span>
-            <span className="nutrition-data">Fiber</span>
-            <span className="nutrition-data">VitaminC</span>
-            <span className="nutrition-data">Calcium</span>
-            <span className="nutrition-data">Potassium</span>
+            <th className="nutrition-data">Kcal</th>
+            <th className="nutrition-data">Protein</th>
+            <th className="nutrition-data">Carbohydrates</th>
+            <th className="nutrition-data">Fat</th>
+            <th className="nutrition-data">Fiber</th>
+            <th className="nutrition-data">VitaminC</th>
+            <th className="nutrition-data">Calcium</th>
+            <th className="nutrition-data">Potassium</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <span className="nutrition-data">{amountKcal} kcal</span>
-            <span className="nutrition-data">{amountProtein} g</span>
-            <span className="nutrition-data">{amountCarbohydrates} g</span>
-            <span className="nutrition-data">{amountFat} g</span>
-            <span className="nutrition-data">{amountFiber} g</span>
-            <span className="nutrition-data">{amountVitaminC} mg</span>
-            <span className="nutrition-data">{amountCalcium} mg</span>
-            <span className="nutrition-data">{amountPotassium} mg</span>
+            <td className="nutrition-data">{amountKcal} kcal</td>
+            <td className="nutrition-data">{amountProtein} g</td>
+            <td className="nutrition-data">{amountCarbohydrates} g</td>
+            <td className="nutrition-data">{amountFat} g</td>
+            <td className="nutrition-data">{amountFiber} g</td>
+            <td className="nutrition-data">{amountVitaminC} mg</td>
+            <td className="nutrition-data">{amountCalcium} mg</td>
+            <td className="nutrition-data">{amountPotassium} mg</td>
           </tr>
         </tbody>
       </table>
