@@ -67,9 +67,17 @@ function App() {
   // zaznacza checkboxa
   // 1 przekazujemy sobie aktualny stan miski, 2 przekazuję również elemnt, który został już kliknięty ale jako cały object
 
-  const getChecked = (e) => {
+  if (checked) {
+    setBowl([...bowl, item]);
+  } else setBowl.splice(index, 1);
+  return true;
+
+  const result = bowl.filter((item) => word.length > 6);
+
+  const handleOnChange = (e, item) => {
     console.log(e.target.value);
     setChecked(e.target.value);
+    setBowl([...bowl, item]);
   };
 
   // const getNoChecked = (e) => {
@@ -94,7 +102,7 @@ function App() {
     <div>
       <h1>Make your perfect porridge</h1>
       <IngredientsList
-        onChange={getChecked}
+        onChange={handleOnChange}
         // noChecked={getNoChecked}
         // checked={checked}
         // // // noChecked={getNoChecked}

@@ -2,10 +2,10 @@ import IngredientCheckbox from "./IngredientCheckbox";
 import { ingredients } from "./data/ingredients";
 
 const IngredientsList = ({ onChange, checked, noChecked, setBowl, bowl }) => {
-  const handleOnChange = (event, item) => {
-    onChange(event);
-    setBowl([...bowl, item]);
-  };
+  // const handleOnChange = (event, item) => {
+  //   onChange(event);
+  //   setBowl([...bowl, item]);
+  // };
 
   return (
     <>
@@ -17,7 +17,8 @@ const IngredientsList = ({ onChange, checked, noChecked, setBowl, bowl }) => {
             value={item.name}
             checked={checked}
             noChecked={noChecked}
-            onChange={(event) => handleOnChange(event, item)}
+            // onChange={onChange}
+            onChange={(event) => onChange(event, item)}
             htmlFor={item.name}
             labelText={item.name}
             key={index}
