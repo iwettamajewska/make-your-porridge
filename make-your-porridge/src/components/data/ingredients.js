@@ -2,6 +2,20 @@
 
 export const ingredients = [
   {
+    name: "porridge",
+    class: "porridge",
+    kcal: 1112,
+    protein: 1113,
+    carbohydrates: 1116,
+    fat: 1119,
+    fiber: 1112,
+    vitaminC: 1118,
+    calcium: 1115,
+    pottassium: 1117,
+    polyphenoles: 1110,
+    // imageUrl: images.yoghurt,
+  },
+  {
     name: "yoghurt",
     class: "yoghurt",
     kcal: 100,

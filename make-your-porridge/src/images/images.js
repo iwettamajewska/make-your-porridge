@@ -27,6 +27,7 @@
 // };
 
 export const images = {
+  porridge: require("./porridge.png"),
   yoghurt: require("./yoghurt.jpg"),
   cowMilk: require("./cowMilk.jpg"),
   riceMilk: require("./riceMilk.jpg"),

@@ -3,14 +3,32 @@ import ImageIngredients from "./components/ImagesIngredients";
 import IngredientsList from "./components/IngredientsList";
 import { useState } from "react";
 import NutritionTable from "./components/NutritionTable";
+import { ingredients } from "./components/data/ingredients";
 // import { ingredients } from "./components/data/ingredients";
 
 function App() {
-  const [checked, setChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(
+    new Array(ingredients.length).fill(false)
+  );
   // const [checked, setChecked] = useState(
-  //   new Array(ingredients.length).fill(false)
+  //   new Array(ingredients.length).fill(false)c
   // );
-  const [bowl, setBowl] = useState([]); // to jest nasza miska z owsianką
+  const [bowl, setBowl] = useState([
+    ...{
+      name: "porridge",
+      class: "porridge",
+      kcal: 1112,
+      protein: 1113,
+      carbohydrates: 1116,
+      fat: 1119,
+      fiber: 1112,
+      vitaminC: 1118,
+      calcium: 1115,
+      pottassium: 1117,
+      polyphenoles: 1110,
+      // imageUrl: images.yoghurt,
+    },
+  ]); // to jest nasza miska z owsianką
   // console.log(bowl);
 
   // const getChecked = (position) => {
@@ -67,17 +85,37 @@ function App() {
   // zaznacza checkboxa
   // 1 przekazujemy sobie aktualny stan miski, 2 przekazuję również elemnt, który został już kliknięty ale jako cały object
 
-  if (checked) {
-    setBowl([...bowl, item]);
-  } else setBowl.splice(index, 1);
-  return true;
+  // if (checked) {
+  //   setBowl([...bowl, item]);
+  // } else setBowl.splice(index, 1);
+  // return true;
 
-  const result = bowl.filter((item) => word.length > 6);
+  // const result = bowl.filter((item) => word.length > 6);
 
-  const handleOnChange = (e, item) => {
-    console.log(e.target.value);
-    setChecked(e.target.value);
-    setBowl([...bowl, item]);
+  // const handleOnChange = (e, item) => {
+  //   console.log(e.target.value);
+  //   setChecked(e.target.value);
+  //   setBowl([...bowl, item]);
+  // };
+
+  const handleOnChange = (
+    clickedItemFromIngredientList,
+    clickedIngredientIndex
+  ) => {
+    const updatedCheckedState = isChecked.map((elem, index) =>
+      index === clickedIngredientIndex ? !elem : elem
+    );
+
+    setIsChecked(updatedCheckedState);
+
+    if (updatedCheckedState[clickedIngredientIndex]) {
+      setBowl([...bowl, clickedItemFromIngredientList]);
+    } else {
+      const ingredientsArr = bowl.filter(
+        (itemInBowl) => itemInBowl !== clickedItemFromIngredientList
+      );
+      setBowl(ingredientsArr);
+    }
   };
 
   // const getNoChecked = (e) => {
@@ -106,7 +144,7 @@ function App() {
         // noChecked={getNoChecked}
         // checked={checked}
         // // // noChecked={getNoChecked}
-        setBowl={setBowl}
+        // setBowl={setBowl}
         bowl={bowl} /* {checked ? checkedText : uncheckedText} */
       />
       <ImageIngredients bowl={bowl} />

@@ -1,7 +1,7 @@
 import IngredientCheckbox from "./IngredientCheckbox";
 import { ingredients } from "./data/ingredients";
 
-const IngredientsList = ({ onChange, checked, noChecked, setBowl, bowl }) => {
+const IngredientsList = ({ onChange, checked, noChecked }) => {
   // const handleOnChange = (event, item) => {
   //   onChange(event);
   //   setBowl([...bowl, item]);
@@ -18,7 +18,7 @@ const IngredientsList = ({ onChange, checked, noChecked, setBowl, bowl }) => {
             checked={checked}
             noChecked={noChecked}
             // onChange={onChange}
-            onChange={(event) => onChange(event, item)}
+            onChange={() => onChange(item, index)}
             htmlFor={item.name}
             labelText={item.name}
             key={index}
