@@ -2,8 +2,9 @@
 
 export const ingredients = [
   {
-    name: "porridge",
-    class: "porridge",
+    name: "oatmeal",
+    class: "oatmeal",
+    isChecked: true,
     kcal: 1112,
     protein: 1113,
     carbohydrates: 1116,
@@ -18,6 +19,7 @@ export const ingredients = [
   {
     name: "yoghurt",
     class: "yoghurt",
+    isChecked: false,
     kcal: 100,
     protein: 20,
     carbohydrates: 19,
@@ -30,8 +32,9 @@ export const ingredients = [
     // imageUrl: images.yoghurt,
   },
   {
-    name: "cow milk",
-    class: "cow-milk",
+    name: "walnut",
+    class: "walnut",
+    isChecked: false,
     kcal: 200,
     protein: 40,
     carbohydrates: 19,
@@ -46,6 +49,7 @@ export const ingredients = [
   {
     name: "rice milk",
     class: "rice-milk",
+    isChecked: false,
     kcal: 450,
     protein: 20,
     carbohydrates: 19,
@@ -60,6 +64,7 @@ export const ingredients = [
   {
     name: "banana",
     class: "banana",
+    isChecked: false,
     kcal: 870,
     protein: 20,
     carbohydrates: 19,
@@ -73,8 +78,9 @@ export const ingredients = [
     // imageUrl: images.banana,
   },
   {
-    name: "apple",
-    class: "apple",
+    name: "grapes",
+    class: "grapes",
+    isChecked: false,
     kcal: 4,
     protein: 20,
     carbohydrates: 19,
@@ -86,8 +92,9 @@ export const ingredients = [
     // imageUrl: images.apple,
   },
   {
-    name: "orange",
-    class: "orange",
+    name: "tangerine",
+    class: "tangerine",
+    isChecked: false,
     kcal: 24,
     protein: 20,
     carbohydrates: 19,
@@ -99,8 +106,9 @@ export const ingredients = [
     // imageUrl: images.orange,
   },
   {
-    name: "strawberries",
-    class: "strawberries",
+    name: "dactyles",
+    class: "dactyles",
+    isChecked: false,
     kcal: 42,
     protein: 20,
     carbohydrates: 19,
@@ -114,6 +122,7 @@ export const ingredients = [
   {
     name: "blueberries",
     class: "blueberries",
+    isChecked: false,
     kcal: 85,
     protein: 20,
     carbohydrates: 19,
@@ -127,6 +136,7 @@ export const ingredients = [
   {
     name: "raspberries",
     class: "raspberries",
+    isChecked: false,
     kcal: 98,
     protein: 20,
     carbohydrates: 19,
@@ -138,8 +148,9 @@ export const ingredients = [
     // imageUrl: images.raspberries,
   },
   {
-    name: "walnut",
-    class: "walnut",
+    name: "watermelon",
+    class: "watermelon",
+    isChecked: false,
     kcal: 999,
     protein: 20,
     carbohydrates: 19,
@@ -151,8 +162,9 @@ export const ingredients = [
     // imageUrl: images.walnut,
   },
   {
-    name: "cashew",
-    class: "cashew",
+    name: "kiwi",
+    class: "kiwi",
+    isChecked: false,
     kcal: 888,
     protein: 20,
     carbohydrates: 19,
@@ -164,8 +176,9 @@ export const ingredients = [
     // imageUrl: images.cashew,
   },
   {
-    name: "chia seeds",
-    class: "chia-seeds",
+    name: "blackberries",
+    class: "blackberries",
+    isChecked: false,
     kcal: 555,
     protein: 20,
     carbohydrates: 19,
@@ -174,6 +187,20 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
+    // imageUrl: images.chiaSeeds
+  },
+  {
+    name: "cranberries",
+    class: "cranberries",
+    isChecked: false,
+    kcal: 225,
+    protein: 10,
+    carbohydrates: 13,
+    fat: 2,
+    fiber: 3,
+    vitaminC: 6,
+    calcium: 9,
+    pottassium: 1,
     // imageUrl: images.chiaSeeds
   },
 ];

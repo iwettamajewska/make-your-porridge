@@ -10,26 +10,28 @@ function App() {
   const [isChecked, setIsChecked] = useState(
     new Array(ingredients.length).fill(false)
   );
+  console.log(isChecked);
   // const [checked, setChecked] = useState(
   //   new Array(ingredients.length).fill(false)c
   // );
   const [bowl, setBowl] = useState([
-    ...{
-      name: "porridge",
-      class: "porridge",
-      kcal: 1112,
-      protein: 1113,
-      carbohydrates: 1116,
-      fat: 1119,
-      fiber: 1112,
-      vitaminC: 1118,
-      calcium: 1115,
-      pottassium: 1117,
-      polyphenoles: 1110,
-      // imageUrl: images.yoghurt,
-    },
+    ingredients[0],
+    // ...{
+    //   name: "porridge",
+    //   class: "porridge",
+    //   kcal: 1112,
+    //   protein: 1113,
+    //   carbohydrates: 1116,
+    //   fat: 1119,
+    //   fiber: 1112,
+    //   vitaminC: 1118,
+    //   calcium: 1115,
+    //   pottassium: 1117,
+    //   polyphenoles: 1110,
+    //   // imageUrl: images.yoghurt,
+    // }
   ]); // to jest nasza miska z owsianką
-  // console.log(bowl);
+  console.log(bowl);
 
   // const getChecked = (position) => {
   //   const updatedCheckedState = checked.map((item, index) =>
@@ -108,15 +110,25 @@ function App() {
 
     setIsChecked(updatedCheckedState);
 
-    if (updatedCheckedState[clickedIngredientIndex]) {
-      setBowl([...bowl, clickedItemFromIngredientList]);
-    } else {
-      const ingredientsArr = bowl.filter(
-        (itemInBowl) => itemInBowl !== clickedItemFromIngredientList
-      );
-      setBowl(ingredientsArr);
-    }
+    const checkedElems = ingredients.filter(
+      (ingredient) => ingredient.isChecked === true
+    );
+    setBowl(checkedElems);
+
+    // if (updatedCheckedState[clickedIngredientIndex]) {
+    //   setBowl([...bowl, clickedItemFromIngredientList]);
+    // } else {
+    //   const ingredientsArr = bowl.filter(
+    //     (itemInBowl) => itemInBowl !== clickedItemFromIngredientList
+    //   );
+    //   setBowl(ingredientsArr);
+    // }
   };
+
+  // checkedElems = ingrediends.filter(
+  //   (ingredient) => ingredient.isChecked === true
+  // );
+  // setBowl(checkedElems);
 
   // const getNoChecked = (e) => {
   //   bowl.pop(e.target.value);

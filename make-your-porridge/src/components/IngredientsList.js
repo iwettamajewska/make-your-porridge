@@ -30,3 +30,5 @@ const IngredientsList = ({ onChange, checked, noChecked }) => {
 };
 
 export default IngredientsList;
+
+// {ingredients.filter().map((item, index) => (
