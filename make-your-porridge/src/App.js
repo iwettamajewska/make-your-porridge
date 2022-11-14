@@ -110,19 +110,19 @@ function App() {
 
     setIsChecked(updatedCheckedState);
 
-    const checkedElems = ingredients.filter(
-      (ingredient) => ingredient.isChecked === true
-    );
-    setBowl(checkedElems);
+    // const checkedElems = ingredients.filter(
+    //   (ingredient) => ingredient.isChecked === true
+    // );
+    // setBowl(checkedElems); // zapis skrócony zamiast if, ale składniki się nie sumują. Muszę jeszcze zrobić tak, żeby w momencie jak checkuję elemnt
 
-    // if (updatedCheckedState[clickedIngredientIndex]) {
-    //   setBowl([...bowl, clickedItemFromIngredientList]);
-    // } else {
-    //   const ingredientsArr = bowl.filter(
-    //     (itemInBowl) => itemInBowl !== clickedItemFromIngredientList
-    //   );
-    //   setBowl(ingredientsArr);
-    // }
+    if (updatedCheckedState[clickedIngredientIndex]) {
+      setBowl([...bowl, clickedItemFromIngredientList]);
+    } else {
+      const ingredientsArr = bowl.filter(
+        (itemInBowl) => itemInBowl !== clickedItemFromIngredientList
+      );
+      setBowl(ingredientsArr);
+    }
   };
 
   // checkedElems = ingrediends.filter(
