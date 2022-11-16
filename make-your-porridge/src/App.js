@@ -14,23 +14,7 @@ function App() {
   // const [checked, setChecked] = useState(
   //   new Array(ingredients.length).fill(false)c
   // );
-  const [bowl, setBowl] = useState([
-    constantIngredient,
-    // ...{
-    //   name: "porridge",
-    //   class: "porridge",
-    //   kcal: 1112,
-    //   protein: 1113,
-    //   carbohydrates: 1116,
-    //   fat: 1119,
-    //   fiber: 1112,
-    //   vitaminC: 1118,
-    //   calcium: 1115,
-    //   pottassium: 1117,
-    //   polyphenoles: 1110,
-    //   // imageUrl: images.yoghurt,
-    // }
-  ]); // to jest nasza miska z owsianką
+  const [bowl, setBowl] = useState([]);
   console.log(bowl);
 
   // const getChecked = (position) => {
@@ -44,42 +28,42 @@ function App() {
   //////////////////
   const amountKcal = bowl.reduce((acc, item) => {
     return acc + item.kcal;
-  }, 0);
+  }, constantIngredient.kcal);
   console.log(amountKcal);
 
   const amountProtein = bowl.reduce((acc, item) => {
     return acc + item.protein;
-  }, 0);
+  }, 44);
   console.log(amountProtein);
 
   const amountCarbohydrates = bowl.reduce((acc, item) => {
     return acc + item.carbohydrates;
-  }, 0);
+  }, 55);
   console.log(amountCarbohydrates);
 
   const amountFat = bowl.reduce((acc, item) => {
     return acc + item.fat;
-  }, 0);
+  }, 77);
   console.log(amountFat);
 
   const amountFiber = bowl.reduce((acc, item) => {
     return acc + item.fiber;
-  }, 0);
+  }, 88);
   console.log(amountFiber);
 
   const amountVitaminC = bowl.reduce((acc, item) => {
     return acc + item.vitaminC;
-  }, 0);
+  }, 44);
   console.log(amountVitaminC);
 
   const amountCalcium = bowl.reduce((acc, item) => {
     return acc + item.calcium;
-  }, 0);
+  }, 20);
   console.log(amountCalcium);
 
   const amountPotassium = bowl.reduce((acc, item) => {
     return acc + item.pottassium;
-  }, 0);
+  }, 80);
   console.log(amountPotassium);
 
   ////////////////
@@ -108,7 +92,7 @@ function App() {
       (ingredients) => ingredients.isChecked === true
     );
 
-    checkedElems.unshift(constantIngredient);
+    // checkedElems.unshift(constantIngredient);
 
     setBowl(checkedElems);
     // const updatedCheckedState = isChecked.map((elem, index) =>

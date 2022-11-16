@@ -34,7 +34,7 @@ export const oatmealImage = {
 };
 
 export const images = {
-  // oatmeal: require("./oatmeal.png"),
+  oatmeal: require("./oatmeal.png"),
   yoghurt: require("./yoghurt.png"),
   walnut: require("./walnut.png"),
   riceMilk: require("./riceMilk.png"),
