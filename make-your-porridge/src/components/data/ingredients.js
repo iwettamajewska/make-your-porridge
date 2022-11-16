@@ -1,21 +1,21 @@
 // import { images } from "../../images/images";
+export const constantIngredient = {
+  name: "oatmeal",
+  class: "oatmeal",
+  isChecked: true,
+  kcal: 1112,
+  protein: 1113,
+  carbohydrates: 1116,
+  fat: 1119,
+  fiber: 1112,
+  vitaminC: 1118,
+  calcium: 1115,
+  pottassium: 1117,
+  polyphenoles: 1110,
+  // imageUrl: images.yoghurt,
+};
 
 export const ingredients = [
-  {
-    name: "oatmeal",
-    class: "oatmeal",
-    isChecked: true,
-    kcal: 1112,
-    protein: 1113,
-    carbohydrates: 1116,
-    fat: 1119,
-    fiber: 1112,
-    vitaminC: 1118,
-    calcium: 1115,
-    pottassium: 1117,
-    polyphenoles: 1110,
-    // imageUrl: images.yoghurt,
-  },
   {
     name: "yoghurt",
     class: "yoghurt",

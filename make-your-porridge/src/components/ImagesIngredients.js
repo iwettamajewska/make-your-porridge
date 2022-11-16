@@ -1,9 +1,39 @@
-import { images } from "../images/images";
+import { images, oatmealImage, worktopImage } from "../images/images";
 
 const ImageIngredients = ({ bowl }) => {
   return (
-    <>
-      {/* <img
+    <div className="image-container">
+      <div className="worktop-conainer">
+        <img src={worktopImage.worktop} className="worktop" alt="worktop" />
+      </div>
+      <img
+        src={oatmealImage.oatmeal}
+        className="oatmeal image relative correct-oatmeal"
+        alt="oatmeal"
+      />
+
+      {bowl.map((item, index) => (
+        <img
+          src={images[item.name]}
+          // className={images.className}
+          // alt={images[item.alt]}
+          className={[item.class + " image" + " absolute"]}
+          alt={item.class}
+          // className="cow-milk image"
+          // alt="cow-milk"
+          key={index}
+          // className={[item.class + " image"]} <-- tu coś nie tak jest
+          // alt={[item.class]}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default ImageIngredients;
+
+{
+  /* <img
         src={images.yoghurt}
         className="strawberries image"
         alt="strawberries"
@@ -33,23 +63,13 @@ const ImageIngredients = ({ bowl }) => {
         src={images.chiaSeeds}
         className="chia-seeds image"
         alt="chiaSeeds"
-      /> */}
-      {bowl.map((item, index) => (
-        <img
-          src={images[item.name]}
-          // className={images.className}
-          // alt={images[item.alt]}
-          className={[item.class + " image"]}
-          alt={item.class}
-          // className="cow-milk image"
-          // alt="cow-milk"
-          key={index}
-          // className={[item.class + " image"]} <-- tu coś nie tak jest
-          // alt={[item.class]}
-        />
-      ))}
-    </>
-  );
-};
-
-export default ImageIngredients;
+      /> */
+}
+{
+  /* <img
+            src={oatmealImage[item.name]}
+            className={[item.class + " image"]}
+            alt={item.class}
+            key={index}
+          /> */
+}

@@ -25,9 +25,16 @@
 //   cashew: CashewImage,
 //   chiaSeeds: ChiaSeedsImage
 // };
+export const worktopImage = {
+  worktop: require("./worktop.jpg"),
+};
+
+export const oatmealImage = {
+  oatmeal: require("./oatmeal.png"),
+};
 
 export const images = {
-  oatmeal: require("./oatmeal.png"),
+  // oatmeal: require("./oatmeal.png"),
   yoghurt: require("./yoghurt.png"),
   walnut: require("./walnut.png"),
   riceMilk: require("./riceMilk.png"),

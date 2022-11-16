@@ -12,8 +12,8 @@ const NutritionTable = ({
 }) => {
   return (
     <>
-      <p>your porridge contains:</p>
-      <table>
+      <h3 className="your-porridge-contains-text">your porridge contains:</h3>
+      <table className="nutrition-table">
         <thead>
           <tr className="nutrition-name">
             <th className="nutrition-data">Kcal</th>

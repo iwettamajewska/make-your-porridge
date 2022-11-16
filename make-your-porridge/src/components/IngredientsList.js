@@ -1,7 +1,7 @@
 import IngredientCheckbox from "./IngredientCheckbox";
 import { ingredients } from "./data/ingredients";
 
-const IngredientsList = ({ onChange, checked, noChecked }) => {
+const IngredientsList = ({ onChange, checked, noChecked, blabla }) => {
   // const handleOnChange = (event, item) => {
   //   onChange(event);
   //   setBowl([...bowl, item]);
@@ -9,23 +9,21 @@ const IngredientsList = ({ onChange, checked, noChecked }) => {
 
   return (
     <>
-      <p>choose ingredients</p>
+      <h2 className="choose-ingredients-text">choose ingredients:</h2>
       <form className="food-select">
-        {ingredients
-          .filter((ingredient) => ingredient.isChecked === false) //tylko na starcie nie mam miseczki i początkowej wartoci w tabeli
-          .map((item, index) => (
-            <IngredientCheckbox
-              name={item.name}
-              value={item.name}
-              checked={checked}
-              noChecked={noChecked}
-              // onChange={onChange}
-              onChange={() => onChange(item, index)}
-              htmlFor={item.name}
-              labelText={item.name}
-              key={index}
-            />
-          ))}
+        {ingredients.map((item, index) => (
+          <IngredientCheckbox
+            name={item.name}
+            value={item.name}
+            checked={item.isChecked}
+            noChecked={noChecked}
+            // onChange={onChange}
+            onChange={() => onChange(item)}
+            htmlFor={item.name}
+            labelText={item.name}
+            key={index}
+          />
+        ))}
       </form>
     </>
   );

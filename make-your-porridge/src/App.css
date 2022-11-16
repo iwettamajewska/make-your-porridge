@@ -1,6 +1,65 @@
-* {
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* * {
+  font-size: 16px;
+
+} */
+
+.container {
+  background-color: rgba(200, 204, 212, 0.2);
+  /* margin: 0 auto; */
+  text-align: center;
+}
+
+.tittle-text {
+  padding: 2rem;
+}
+.choose-ingredients-text {
+  padding-bottom: 2rem;
+}
+
+.food-select {
+  padding: 2rem 0rem;
+}
+.your-porridge-contains-text {
+  padding: 2rem 0rem;
+}
+
+.nutrition-table {
+  padding-bottom: 2rem;
+  margin-bottom: 10rem;
+}
+
+tr {
+  margin-bottom: 10rem;
+}
+
+.nutrition-table {
+  padding-bottom: 2rem;
+  margin-bottom: 10rem;
+}
+/* nie działa padding i margin*/
 
 table {
   border-collapse: collapse;
@@ -8,13 +67,15 @@ table {
   width: 100%;
   /* margin: 2rem auto; */
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
 table th {
-  background-color: rgb(235, 183, 88);
+  background-color: rgb(182, 161, 161);
 }
 table td {
-  background-color: rgba(235, 183, 88, 0.1);
+  background-color: rgba(182, 161, 161, 0.1);
 }
 
 table th,
@@ -33,57 +94,157 @@ tr {
   height: 20%;
 } */
 
-.oatmeal {
-  width: 20rem;
+/* .container {
+  background-image: url "tablecloth.jpg";
+} */
+.correct-oatmeal {
+  /* width: 30rem;
+  position: absolute;
+  z-index: 4;
+  filter: brightness(1.1); */
+  /* top: 1rem;
+  left: 10rem; */
+
+  /* margin-top: 75rem; */
 }
 
 .banana {
-  width: 12rem;
+  width: 15rem;
+  z-index: 5;
+  position: absolute;
+  top: 14rem;
+  left: 55rem;
 }
 
+/* .image-container {
+  position: relative;
+} */
+
+.relative {
+  margin: 5rem;
+  position: relative;
+  z-index: 4;
+}
+
+.worktop {
+  width: 80rem;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.oatmeal {
+  /* position: absolute;
+  filter: brightness(1.1);
+  top: 1rem;
+  left: 10rem; */
+
+  width: 30rem;
+  position: absolute;
+  z-index: 4;
+  filter: brightness(1.1);
+  /* left: 4;
+  right: 40;
+  margin: 0 auto; */
+  top: 4rem;
+  left: 40rem;
+}
+/* .absolute {
+  position: absolute;
+} */
+
 .dactyles {
-  width: 9rem;
+  width: 12rem;
+  position: absolute;
+  z-index: 9;
+  top: 18rem;
+  left: 50rem;
 }
 
 .blackberries {
-  width: 9rem;
+  width: 15rem;
+  position: absolute;
+  z-index: 16;
+  top: 24rem;
+  left: 48rem;
 }
 
 .blueberries {
-  width: 9rem;
+  width: 14rem;
+  position: absolute;
+  z-index: 15;
+  top: 24rem;
+  left: 55rem;
 }
 
 .cranberries {
   width: 9rem;
+  position: absolute;
+  z-index: 14;
+  top: 24rem;
+  left: 51rem;
+  transform: rotate(-10deg);
 }
 
 .grapes {
-  width: 9rem;
+  width: 11rem;
+  position: absolute;
+  z-index: 13;
+  top: 20rem;
+  left: 60rem;
 }
 .kiwi {
-  width: 9rem;
+  width: 16rem;
+  position: absolute;
+  z-index: 7;
+  top: 22rem;
+  left: 55rem;
 }
 
 .raspberries {
-  width: 9rem;
+  width: 16rem;
+  position: absolute;
+  z-index: 11;
+  top: 13rem;
+  left: 50rem;
 }
 
 .rice-milk {
   width: 9rem;
+  position: absolute;
+  z-index: 5;
+  top: 24rem;
+  left: 55rem;
 }
 
 .tangerine {
-  width: 9rem;
+  width: 14rem;
+  position: absolute;
+  z-index: 10;
+  top: 16rem;
+  left: 55rem;
 }
 
 .walnut {
-  width: 9rem;
+  width: 15rem;
+  position: absolute;
+  z-index: 9;
+  top: 24rem;
+  left: 55rem;
 }
 
 .watermelon {
-  width: 9rem;
+  width: 15rem;
+  position: absolute;
+  z-index: 8;
+  top: 24rem;
+  left: 55rem;
 }
 
 .yoghurt {
-  width: 9rem;
+  width: 16rem;
+  position: absolute;
+  z-index: 7;
+  top: 20rem;
+  left: 47rem;
+  transform: rotate(-110deg);
 }

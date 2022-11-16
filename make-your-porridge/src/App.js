@@ -3,19 +3,19 @@ import ImageIngredients from "./components/ImagesIngredients";
 import IngredientsList from "./components/IngredientsList";
 import { useState } from "react";
 import NutritionTable from "./components/NutritionTable";
-import { ingredients } from "./components/data/ingredients";
+import { constantIngredient, ingredients } from "./components/data/ingredients";
 // import { ingredients } from "./components/data/ingredients";
 
 function App() {
-  const [isChecked, setIsChecked] = useState(
-    new Array(ingredients.length).fill(false)
-  );
-  console.log(isChecked);
+  // const [isChecked, setIsChecked] = useState(
+  //   new Array(ingredients.length).fill(false)
+  // );
+  // console.log(isChecked);
   // const [checked, setChecked] = useState(
   //   new Array(ingredients.length).fill(false)c
   // );
   const [bowl, setBowl] = useState([
-    ingredients[0],
+    constantIngredient,
     // ...{
     //   name: "porridge",
     //   class: "porridge",
@@ -100,29 +100,36 @@ function App() {
   //   setBowl([...bowl, item]);
   // };
 
-  const handleOnChange = (
-    clickedItemFromIngredientList,
-    clickedIngredientIndex
-  ) => {
-    const updatedCheckedState = isChecked.map((elem, index) =>
-      index === clickedIngredientIndex ? !elem : elem
+  const handleOnChange = (item) => {
+    item.isChecked = !item.isChecked;
+    console.log(item.isChecked);
+
+    const checkedElems = ingredients.filter(
+      (ingredients) => ingredients.isChecked === true
     );
 
-    setIsChecked(updatedCheckedState);
+    checkedElems.unshift(constantIngredient);
+
+    setBowl(checkedElems);
+    // const updatedCheckedState = isChecked.map((elem, index) =>
+    //   index === clickedIngredientIndex ? !elem : elem
+    // );
+
+    // setIsChecked(updatedCheckedState);
 
     // const checkedElems = ingredients.filter(
     //   (ingredient) => ingredient.isChecked === true
     // );
     // setBowl(checkedElems); // zapis skrócony zamiast if, ale składniki się nie sumują. Muszę jeszcze zrobić tak, żeby w momencie jak checkuję elemnt
 
-    if (updatedCheckedState[clickedIngredientIndex]) {
-      setBowl([...bowl, clickedItemFromIngredientList]);
-    } else {
-      const ingredientsArr = bowl.filter(
-        (itemInBowl) => itemInBowl !== clickedItemFromIngredientList
-      );
-      setBowl(ingredientsArr);
-    }
+    //   if (updatedCheckedState[clickedIngredientIndex]) {
+    //     setBowl([...bowl, clickedItemFromIngredientList]);
+    //   } else {
+    //     const ingredientsArr = bowl.filter(
+    //       (itemInBowl) => itemInBowl !== clickedItemFromIngredientList
+    //     );
+    //     setBowl(ingredientsArr);
+    //   }
   };
 
   // checkedElems = ingrediends.filter(
@@ -149,8 +156,8 @@ function App() {
   // list;
 
   return (
-    <div>
-      <h1>Make your perfect porridge</h1>
+    <div className="container">
+      <h1 className="tittle-text">Make your perfect porridge</h1>
       <IngredientsList
         onChange={handleOnChange}
         // noChecked={getNoChecked}
