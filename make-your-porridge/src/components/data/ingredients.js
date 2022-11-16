@@ -1,6 +1,7 @@
 // import { images } from "../../images/images";
 export const constantIngredient = {
   name: "oatmeal",
+  id: "oatmeal",
   class: "oatmeal",
   isChecked: true,
   kcal: 1112,
@@ -18,6 +19,7 @@ export const constantIngredient = {
 export const ingredients = [
   {
     name: "yoghurt",
+    id: "yoghurt",
     class: "yoghurt",
     isChecked: false,
     kcal: 100,
@@ -33,6 +35,7 @@ export const ingredients = [
   },
   {
     name: "walnut",
+    id: "walnut",
     class: "walnut",
     isChecked: false,
     kcal: 200,
@@ -48,6 +51,7 @@ export const ingredients = [
   },
   {
     name: "rice milk",
+    id: "riceMilk",
     class: "rice-milk",
     isChecked: false,
     kcal: 450,
@@ -63,6 +67,7 @@ export const ingredients = [
   },
   {
     name: "banana",
+    id: "banana",
     class: "banana",
     isChecked: false,
     kcal: 870,
@@ -79,6 +84,7 @@ export const ingredients = [
   },
   {
     name: "grapes",
+    id: "grapes",
     class: "grapes",
     isChecked: false,
     kcal: 4,
@@ -93,6 +99,7 @@ export const ingredients = [
   },
   {
     name: "tangerine",
+    id: "tangerine",
     class: "tangerine",
     isChecked: false,
     kcal: 24,
@@ -107,6 +114,7 @@ export const ingredients = [
   },
   {
     name: "dactyles",
+    id: "dactyles",
     class: "dactyles",
     isChecked: false,
     kcal: 42,
@@ -121,6 +129,7 @@ export const ingredients = [
   },
   {
     name: "blueberries",
+    id: "blueberries",
     class: "blueberries",
     isChecked: false,
     kcal: 85,
@@ -135,6 +144,7 @@ export const ingredients = [
   },
   {
     name: "raspberries",
+    id: "raspberries",
     class: "raspberries",
     isChecked: false,
     kcal: 98,
@@ -149,6 +159,7 @@ export const ingredients = [
   },
   {
     name: "watermelon",
+    id: "watermelon",
     class: "watermelon",
     isChecked: false,
     kcal: 999,
@@ -163,6 +174,7 @@ export const ingredients = [
   },
   {
     name: "kiwi",
+    id: "kiwi",
     class: "kiwi",
     isChecked: false,
     kcal: 888,
@@ -177,6 +189,7 @@ export const ingredients = [
   },
   {
     name: "blackberries",
+    id: "blackberries",
     class: "blackberries",
     isChecked: false,
     kcal: 555,
@@ -191,6 +204,7 @@ export const ingredients = [
   },
   {
     name: "cranberries",
+    id: "cranberries",
     class: "cranberries",
     isChecked: false,
     kcal: 225,

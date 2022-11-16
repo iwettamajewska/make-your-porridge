@@ -5,27 +5,26 @@ const ImageIngredients = ({ bowl }) => {
     <div className="image-container">
       <div className="worktop-conainer">
         <img src={worktopImage.worktop} className="worktop" alt="worktop" />
-      </div>
-      <img
-        src={oatmealImage.oatmeal}
-        className="oatmeal image relative correct-oatmeal"
-        alt="oatmeal"
-      />
-
-      {bowl.map((item, index) => (
         <img
-          src={images[item.name]}
-          // className={images.className}
-          // alt={images[item.alt]}
-          className={[item.class + " image" + " absolute"]}
-          alt={item.class}
-          // className="cow-milk image"
-          // alt="cow-milk"
-          key={index}
-          // className={[item.class + " image"]} <-- tu coś nie tak jest
-          // alt={[item.class]}
+          src={oatmealImage.oatmeal}
+          className="oatmeal image relative correct-oatmeal"
+          alt="oatmeal"
         />
-      ))}
+        {bowl.map((item, index) => (
+          <img
+            src={images[item.id]}
+            // className={images.className}
+            // alt={images[item.alt]}
+            className={[item.class + " image" + " test"]}
+            alt={item.class}
+            // className="cow-milk image"
+            // alt="cow-milk"
+            key={index}
+            // className={[item.class + " image"]} <-- tu coś nie tak jest
+            // alt={[item.class]}
+          />
+        ))}
+      </div>
     </div>
   );
 };

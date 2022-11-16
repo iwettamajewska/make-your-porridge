@@ -10,36 +10,38 @@ const NutritionTable = ({
   amountCalcium,
   amountPotassium,
 }) => {
+  const nutritionNameClass = "nutrition-name";
+  const nutritionDataClass = "nutrition-data";
   return (
-    <>
+    <div className="container-nutrition-data">
       <h3 className="your-porridge-contains-text">your porridge contains:</h3>
       <table className="nutrition-table">
         <thead>
-          <tr className="nutrition-name">
-            <th className="nutrition-data">Kcal</th>
-            <th className="nutrition-data">Protein</th>
-            <th className="nutrition-data">Carbohydrates</th>
-            <th className="nutrition-data">Fat</th>
-            <th className="nutrition-data">Fiber</th>
-            <th className="nutrition-data">Vitamin C</th>
-            <th className="nutrition-data">Calcium</th>
-            <th className="nutrition-data">Potassium</th>
+          <tr className="nutrition-name-section">
+            <th className={nutritionNameClass}>Kcal</th>
+            <th className={nutritionNameClass}>Protein</th>
+            <th className={nutritionNameClass}>Carbohydrates</th>
+            <th className={nutritionNameClass}>Fat</th>
+            <th className={nutritionNameClass}>Fiber</th>
+            <th className={nutritionNameClass}>Vitamin C</th>
+            <th className={nutritionNameClass}>Calcium</th>
+            <th className={nutritionNameClass}>Potassium</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td className="nutrition-data">{amountKcal} kcal</td>
-            <td className="nutrition-data">{amountProtein} g</td>
-            <td className="nutrition-data">{amountCarbohydrates} g</td>
-            <td className="nutrition-data">{amountFat} g</td>
-            <td className="nutrition-data">{amountFiber} g</td>
-            <td className="nutrition-data">{amountVitaminC} mg</td>
-            <td className="nutrition-data">{amountCalcium} mg</td>
-            <td className="nutrition-data">{amountPotassium} mg</td>
+          <tr className="nutrition-data-section">
+            <td className={nutritionDataClass}>{amountKcal} kcal</td>
+            <td className={nutritionDataClass}>{amountProtein} g</td>
+            <td className={nutritionDataClass}>{amountCarbohydrates} g</td>
+            <td className={nutritionDataClass}>{amountFat} g</td>
+            <td className={nutritionDataClass}>{amountFiber} g</td>
+            <td className={nutritionDataClass}>{amountVitaminC} mg</td>
+            <td className={nutritionDataClass}>{amountCalcium} mg</td>
+            <td className={nutritionDataClass}>{amountPotassium} mg</td>
           </tr>
         </tbody>
       </table>
-    </>
+    </div>
   );
 };
 

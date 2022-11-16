@@ -9,7 +9,7 @@ const IngredientCheckbox = ({
   return (
     <>
       <input
-        className="option"
+        className="ingredient-option"
         name={name}
         type="checkbox"
         value={value}

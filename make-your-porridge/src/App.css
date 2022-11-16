@@ -14,17 +14,13 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  color: rgba(58, 30, 19, 1);
 }
 
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
-
-/* * {
-  font-size: 16px;
-
-} */
 
 .container {
   background-color: rgba(200, 204, 212, 0.2);
@@ -40,35 +36,29 @@ html {
 }
 
 .food-select {
-  padding: 2rem 0rem;
+  margin: 2rem 0rem;
 }
+
+label {
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+
 .your-porridge-contains-text {
   padding: 2rem 0rem;
 }
 
-.nutrition-table {
+.container-nutrition-data {
   padding-bottom: 2rem;
-  margin-bottom: 10rem;
 }
-
-tr {
-  margin-bottom: 10rem;
-}
-
-.nutrition-table {
-  padding-bottom: 2rem;
-  margin-bottom: 10rem;
-}
-/* nie działa padding i margin*/
 
 table {
   border-collapse: collapse;
   max-width: 900px;
   width: 100%;
   /* margin: 2rem auto; */
-  text-align: center;
+  /* text-align: center; */
   margin: 0 auto;
-  margin-bottom: 5rem;
 }
 
 table th {
@@ -83,168 +73,165 @@ table td {
   border: 1px solid #ddd;
   padding: 8px;
 }
-/* table,
+
 tr {
-  border: 1px solid rgb(27, 22, 22);
-  padding: 8px;
-} */
-
-/* .image {
-  width: 20%;
-  height: 20%;
-} */
-
-/* .container {
-  background-image: url "tablecloth.jpg";
-} */
-.correct-oatmeal {
-  /* width: 30rem;
-  position: absolute;
-  z-index: 4;
-  filter: brightness(1.1); */
-  /* top: 1rem;
-  left: 10rem; */
-
-  /* margin-top: 75rem; */
-}
-
-.banana {
-  width: 15rem;
-  z-index: 5;
-  position: absolute;
-  top: 14rem;
-  left: 55rem;
+  margin: 10rem;
 }
 
 /* .image-container {
   position: relative;
 } */
 
-.relative {
+/* .relative {
   margin: 5rem;
   position: relative;
   z-index: 4;
-}
+} zzzzzzzzzzzzz*/
 
-.worktop {
-  width: 80rem;
-  z-index: 1;
-  opacity: 0.9;
-}
-
-.oatmeal {
-  /* position: absolute;
-  filter: brightness(1.1);
-  top: 1rem;
-  left: 10rem; */
-
-  width: 30rem;
-  position: absolute;
-  z-index: 4;
-  filter: brightness(1.1);
-  /* left: 4;
-  right: 40;
-  margin: 0 auto; */
-  top: 4rem;
-  left: 40rem;
-}
 /* .absolute {
   position: absolute;
 } */
 
+.ingredient-option {
+  accent-color: rgba(182, 161, 161);
+}
+
+/* ////////// */
+.worktop {
+  width: 80vw;
+  opacity: 0.9;
+}
+
+.worktop-conainer {
+  position: relative;
+}
+
+.correct-oatmeal {
+  width: 30vw;
+  z-index: 1;
+  filter: brightness(1.1);
+  position: absolute;
+  top: 4vh;
+  left: 33vw;
+  filter: grayscale(35%);
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+/* /////INGREDIENTS///// */
+.banana {
+  width: 15vw;
+  z-index: 5;
+  position: absolute;
+  /* top: 14rem; */
+  top: 12vh;
+  left: 42vw;
+  filter: grayscale(35%);
+}
+
 .dactyles {
-  width: 12rem;
+  width: 12vw;
   position: absolute;
   z-index: 9;
-  top: 18rem;
-  left: 50rem;
+  top: 33vh;
+  left: 38vw;
+  filter: grayscale(35%);
 }
 
 .blackberries {
-  width: 15rem;
+  width: 15vw;
   position: absolute;
   z-index: 16;
-  top: 24rem;
-  left: 48rem;
+  top: 33vh;
+  left: 36vw;
+  filter: grayscale(35%);
 }
 
 .blueberries {
-  width: 14rem;
+  width: 14vw;
   position: absolute;
   z-index: 15;
-  top: 24rem;
-  left: 55rem;
+  top: 24vh;
+  left: 37vw;
+  filter: grayscale(35%);
 }
 
 .cranberries {
-  width: 9rem;
+  width: 9vw;
   position: absolute;
   z-index: 14;
-  top: 24rem;
-  left: 51rem;
+  top: 24vh;
+  left: 51vw;
   transform: rotate(-10deg);
+  filter: grayscale(35%);
 }
 
 .grapes {
-  width: 11rem;
+  width: 11vw;
   position: absolute;
   z-index: 13;
-  top: 20rem;
-  left: 60rem;
+  top: 20vh;
+  left: 48vw;
 }
 .kiwi {
-  width: 16rem;
+  width: 16vw;
   position: absolute;
   z-index: 7;
-  top: 22rem;
-  left: 55rem;
+  top: 22vh;
+  left: 41vw;
+  filter: grayscale(35%);
 }
 
 .raspberries {
-  width: 16rem;
+  width: 16vw;
   position: absolute;
   z-index: 11;
-  top: 13rem;
-  left: 50rem;
+  top: 13vh;
+  left: 38vw;
+  filter: grayscale(35%);
 }
 
 .rice-milk {
-  width: 9rem;
+  width: 25vw;
   position: absolute;
   z-index: 5;
-  top: 24rem;
-  left: 55rem;
+  top: 9vh;
+  left: 35vw;
+  filter: grayscale(35%);
 }
 
 .tangerine {
-  width: 14rem;
+  width: 14vw;
   position: absolute;
   z-index: 10;
-  top: 16rem;
-  left: 55rem;
+  top: 28vh;
+  left: 45vw;
+  filter: grayscale(35%);
 }
 
 .walnut {
-  width: 15rem;
+  width: 15vw;
   position: absolute;
   z-index: 9;
-  top: 24rem;
-  left: 55rem;
+  top: 24vh;
+  left: 36vw;
+  filter: grayscale(35%);
 }
 
 .watermelon {
-  width: 15rem;
+  width: 15vw;
   position: absolute;
   z-index: 8;
-  top: 24rem;
-  left: 55rem;
+  top: 24vh;
+  left: 45vw;
+  filter: grayscale(35%);
 }
 
 .yoghurt {
-  width: 16rem;
+  width: 16vw;
   position: absolute;
   z-index: 7;
-  top: 20rem;
-  left: 47rem;
+  top: 20vh;
+  left: 34vw;
   transform: rotate(-110deg);
+  filter: grayscale(35%);
 }
