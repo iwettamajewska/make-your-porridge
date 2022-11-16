@@ -33,37 +33,37 @@ function App() {
 
   const amountProtein = bowl.reduce((acc, item) => {
     return acc + item.protein;
-  }, 44);
+  }, constantIngredient.protein);
   console.log(amountProtein);
 
   const amountCarbohydrates = bowl.reduce((acc, item) => {
     return acc + item.carbohydrates;
-  }, 55);
+  }, constantIngredient.carbohydrates);
   console.log(amountCarbohydrates);
 
   const amountFat = bowl.reduce((acc, item) => {
     return acc + item.fat;
-  }, 77);
+  }, constantIngredient.fat);
   console.log(amountFat);
 
   const amountFiber = bowl.reduce((acc, item) => {
     return acc + item.fiber;
-  }, 88);
+  }, constantIngredient.fiber);
   console.log(amountFiber);
 
   const amountVitaminC = bowl.reduce((acc, item) => {
     return acc + item.vitaminC;
-  }, 44);
+  }, constantIngredient.vitaminC);
   console.log(amountVitaminC);
 
   const amountCalcium = bowl.reduce((acc, item) => {
     return acc + item.calcium;
-  }, 20);
+  }, constantIngredient.calcium);
   console.log(amountCalcium);
 
   const amountPotassium = bowl.reduce((acc, item) => {
     return acc + item.pottassium;
-  }, 80);
+  }, constantIngredient.pottassium);
   console.log(amountPotassium);
 
   ////////////////
@@ -151,19 +151,6 @@ function App() {
         bowl={bowl} /* {checked ? checkedText : uncheckedText} */
       />
       <ImageIngredients bowl={bowl} />
-      {/* <NutritionTable
-        amountKcal={amountKcal}
-        amountProtein={amountProtein}
-        amountCarbohydrates={amountCarbohydrates}
-        amountFat={amountFat}
-        amountFiber={amountFiber}
-        amountVitaminC={amountVitaminC}
-        amountCalcium={amountCalcium}
-        amountPotassium={amountPotassium}
-        amountPolyphenoles={amountPolyphenoles}
-        setBowl={setBowl}
-        bowl={bowl}
-      /> */}
       <NutritionTable
         amountKcal={amountKcal}
         amountProtein={amountProtein}
