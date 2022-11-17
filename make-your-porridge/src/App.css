@@ -106,7 +106,7 @@ tr {
   position: relative;
 }
 
-.correct-oatmeal {
+.oatmeal {
   width: 30vw;
   z-index: 1;
   filter: brightness(1.1);

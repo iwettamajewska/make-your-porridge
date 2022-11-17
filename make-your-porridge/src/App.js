@@ -15,7 +15,7 @@ function App() {
   //   new Array(ingredients.length).fill(false)c
   // );
   const [bowl, setBowl] = useState([]);
-  console.log(bowl);
+  // console.log(bowl);
 
   // const getChecked = (position) => {
   //   const updatedCheckedState = checked.map((item, index) =>
@@ -29,42 +29,42 @@ function App() {
   const amountKcal = bowl.reduce((acc, item) => {
     return acc + item.kcal;
   }, constantIngredient.kcal);
-  console.log(amountKcal);
+  // console.log(amountKcal);
 
   const amountProtein = bowl.reduce((acc, item) => {
     return acc + item.protein;
   }, constantIngredient.protein);
-  console.log(amountProtein);
+  // console.log(amountProtein);
 
   const amountCarbohydrates = bowl.reduce((acc, item) => {
     return acc + item.carbohydrates;
   }, constantIngredient.carbohydrates);
-  console.log(amountCarbohydrates);
+  // console.log(amountCarbohydrates);
 
   const amountFat = bowl.reduce((acc, item) => {
     return acc + item.fat;
   }, constantIngredient.fat);
-  console.log(amountFat);
+  // console.log(amountFat);
 
   const amountFiber = bowl.reduce((acc, item) => {
     return acc + item.fiber;
   }, constantIngredient.fiber);
-  console.log(amountFiber);
+  // console.log(amountFiber);
 
   const amountVitaminC = bowl.reduce((acc, item) => {
     return acc + item.vitaminC;
   }, constantIngredient.vitaminC);
-  console.log(amountVitaminC);
+  // console.log(amountVitaminC);
 
   const amountCalcium = bowl.reduce((acc, item) => {
     return acc + item.calcium;
   }, constantIngredient.calcium);
-  console.log(amountCalcium);
+  // console.log(amountCalcium);
 
   const amountPotassium = bowl.reduce((acc, item) => {
     return acc + item.pottassium;
   }, constantIngredient.pottassium);
-  console.log(amountPotassium);
+  // console.log(amountPotassium);
 
   ////////////////
 
@@ -95,6 +95,22 @@ function App() {
     // checkedElems.unshift(constantIngredient);
 
     setBowl(checkedElems);
+
+    // if (item.isChecked.length > 3) {
+    //   errorError;
+    // }
+
+    // if (item.isChecked.length > 3) {
+    //   <p>allowed only 3</p>; // this.prop("checked", false);
+
+    //   alert("allowed only 3");
+    // }
+
+    // if ("input[type=checkbox]:checked".length > 3) {
+    //   this.prop("checked", false);
+    //   alert("allowed only 3");
+    // }
+
     // const updatedCheckedState = isChecked.map((elem, index) =>
     //   index === clickedIngredientIndex ? !elem : elem
     // );
@@ -144,6 +160,8 @@ function App() {
       <h1 className="tittle-text">Make your perfect porridge</h1>
       <IngredientsList
         onChange={handleOnChange}
+        // name="ingredientcheckbox"
+        // isError={errorError}
         // noChecked={getNoChecked}
         // checked={checked}
         // // // noChecked={getNoChecked}

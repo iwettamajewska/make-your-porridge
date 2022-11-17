@@ -7,7 +7,7 @@ const ImageIngredients = ({ bowl }) => {
         <img src={worktopImage.worktop} className="worktop" alt="worktop" />
         <img
           src={oatmealImage.oatmeal}
-          className="oatmeal image relative correct-oatmeal"
+          className="oatmeal image"
           alt="oatmeal"
         />
         {bowl.map((item, index) => (
@@ -15,7 +15,7 @@ const ImageIngredients = ({ bowl }) => {
             src={images[item.id]}
             // className={images.className}
             // alt={images[item.alt]}
-            className={[item.class + " image" + " test"]}
+            className={[item.class + " image"]}
             alt={item.class}
             // className="cow-milk image"
             // alt="cow-milk"
