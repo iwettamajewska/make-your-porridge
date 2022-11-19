@@ -1,11 +1,10 @@
 import IngredientCheckbox from "./IngredientCheckbox";
 import { ingredients } from "./data/ingredients";
 
-const IngredientsList = ({ onChange, checked, noChecked, blabla }) => {
-  // const handleOnChange = (event, item) => {
-  //   onChange(event);
-  //   setBowl([...bowl, item]);
-  // };
+const IngredientsList = ({ onChange, checked, noChecked }) => {
+  const checkedElems = ingredients.filter(
+    (ingredients) => ingredients.isChecked === true
+  );
 
   return (
     <>
@@ -17,26 +16,19 @@ const IngredientsList = ({ onChange, checked, noChecked, blabla }) => {
             value={item.name}
             checked={item.isChecked}
             noChecked={noChecked}
-            // onChange={onChange}
+            disabled={checkedElems.length >= 3 && !item.isChecked}
             onChange={() => onChange(item)}
             htmlFor={item.name}
             labelText={item.name}
             key={index}
           />
         ))}
+        {checkedElems.length >= 3 && (
+          <p className="alert-text">Select only 3 ingredients</p>
+        )}
       </form>
     </>
   );
 };
 
 export default IngredientsList;
-
-// {ingredients.filter((ingredient) => ingredient.isChecked === true).map((item, index) => (
-
-// const checkedElems = ingredients.filter(
-//   (ingredient) => ingredient.isChecked === true
-// );
-
-// const BoxesMap = boxes.map((box, index) => (
-//   <Box key={index} isNew={box.isNew} name={box.name} />
-// ));

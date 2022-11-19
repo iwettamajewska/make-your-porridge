@@ -4,85 +4,21 @@ import IngredientsList from "./components/IngredientsList";
 import { useState } from "react";
 import NutritionTable from "./components/NutritionTable";
 import { constantIngredient, ingredients } from "./components/data/ingredients";
-// import { ingredients } from "./components/data/ingredients";
 
 function App() {
-  // const [isChecked, setIsChecked] = useState(
-  //   new Array(ingredients.length).fill(false)
-  // );
-  // console.log(isChecked);
-  // const [checked, setChecked] = useState(
-  //   new Array(ingredients.length).fill(false)c
-  // );
   const [bowl, setBowl] = useState([]);
-  // console.log(bowl);
+  const [nutritions, setNutritions] = useState({});
 
-  // const getChecked = (position) => {
-  //   const updatedCheckedState = checked.map((item, index) =>
-  //     index === position ? !item : item
-  //   );
-  // };
-
-  // setChecked(updatedCheckedState);
-
-  //////////////////
-  const amountKcal = bowl.reduce((acc, item) => {
-    return acc + item.kcal;
-  }, constantIngredient.kcal);
-  // console.log(amountKcal);
-
-  const amountProtein = bowl.reduce((acc, item) => {
-    return acc + item.protein;
-  }, constantIngredient.protein);
-  // console.log(amountProtein);
-
-  const amountCarbohydrates = bowl.reduce((acc, item) => {
-    return acc + item.carbohydrates;
-  }, constantIngredient.carbohydrates);
-  // console.log(amountCarbohydrates);
-
-  const amountFat = bowl.reduce((acc, item) => {
-    return acc + item.fat;
-  }, constantIngredient.fat);
-  // console.log(amountFat);
-
-  const amountFiber = bowl.reduce((acc, item) => {
-    return acc + item.fiber;
-  }, constantIngredient.fiber);
-  // console.log(amountFiber);
-
-  const amountVitaminC = bowl.reduce((acc, item) => {
-    return acc + item.vitaminC;
-  }, constantIngredient.vitaminC);
-  // console.log(amountVitaminC);
-
-  const amountCalcium = bowl.reduce((acc, item) => {
-    return acc + item.calcium;
-  }, constantIngredient.calcium);
-  // console.log(amountCalcium);
-
-  const amountPotassium = bowl.reduce((acc, item) => {
-    return acc + item.pottassium;
-  }, constantIngredient.pottassium);
-  // console.log(amountPotassium);
-
-  ////////////////
-
-  // zaznacza checkboxa
-  // 1 przekazujemy sobie aktualny stan miski, 2 przekazuję również elemnt, który został już kliknięty ale jako cały object
-
-  // if (checked) {
-  //   setBowl([...bowl, item]);
-  // } else setBowl.splice(index, 1);
-  // return true;
-
-  // const result = bowl.filter((item) => word.length > 6);
-
-  // const handleOnChange = (e, item) => {
-  //   console.log(e.target.value);
-  //   setChecked(e.target.value);
-  //   setBowl([...bowl, item]);
-  // };
+  const calculateNutritions = (checkedElems) => {
+    Object.keys(constantIngredient).map((nutrition) => {
+      setNutritions((prevState) => ({
+        ...prevState,
+        [nutrition]: checkedElems.reduce((acc, item) => {
+          return acc + item[nutrition];
+        }, constantIngredient[nutrition]),
+      }));
+    });
+  };
 
   const handleOnChange = (item) => {
     item.isChecked = !item.isChecked;
@@ -92,93 +28,16 @@ function App() {
       (ingredients) => ingredients.isChecked === true
     );
 
-    // checkedElems.unshift(constantIngredient);
-
+    calculateNutritions(checkedElems);
     setBowl(checkedElems);
-
-    // if (item.isChecked.length > 3) {
-    //   errorError;
-    // }
-
-    // if (item.isChecked.length > 3) {
-    //   <p>allowed only 3</p>; // this.prop("checked", false);
-
-    //   alert("allowed only 3");
-    // }
-
-    // if ("input[type=checkbox]:checked".length > 3) {
-    //   this.prop("checked", false);
-    //   alert("allowed only 3");
-    // }
-
-    // const updatedCheckedState = isChecked.map((elem, index) =>
-    //   index === clickedIngredientIndex ? !elem : elem
-    // );
-
-    // setIsChecked(updatedCheckedState);
-
-    // const checkedElems = ingredients.filter(
-    //   (ingredient) => ingredient.isChecked === true
-    // );
-    // setBowl(checkedElems); // zapis skrócony zamiast if, ale składniki się nie sumują. Muszę jeszcze zrobić tak, żeby w momencie jak checkuję elemnt
-
-    //   if (updatedCheckedState[clickedIngredientIndex]) {
-    //     setBowl([...bowl, clickedItemFromIngredientList]);
-    //   } else {
-    //     const ingredientsArr = bowl.filter(
-    //       (itemInBowl) => itemInBowl !== clickedItemFromIngredientList
-    //     );
-    //     setBowl(ingredientsArr);
-    //   }
   };
-
-  // checkedElems = ingrediends.filter(
-  //   (ingredient) => ingredient.isChecked === true
-  // );
-  // setBowl(checkedElems);
-
-  // const getNoChecked = (e) => {
-  //   bowl.pop(e.target.value);
-  //   getNoChecked(bowl);
-  // };
-
-  // const getNoChecked = (e) => {
-  // console.log(e.target.value);
-  // setChecked(e.target.value);
-  // };
-
-  // const getNoChecked = (e) = {
-  //   setTasks(tasks.filter(item => item !== task));
-  //   console.log(e.target.value);
-  // }
-
-  // const [list, updateList] = useState(fruitNames);
-  // list;
 
   return (
     <div className="container">
       <h1 className="tittle-text">Make your perfect porridge</h1>
-      <IngredientsList
-        onChange={handleOnChange}
-        // name="ingredientcheckbox"
-        // isError={errorError}
-        // noChecked={getNoChecked}
-        // checked={checked}
-        // // // noChecked={getNoChecked}
-        // setBowl={setBowl}
-        bowl={bowl} /* {checked ? checkedText : uncheckedText} */
-      />
+      <IngredientsList onChange={handleOnChange} bowl={bowl} />
       <ImageIngredients bowl={bowl} />
-      <NutritionTable
-        amountKcal={amountKcal}
-        amountProtein={amountProtein}
-        amountCarbohydrates={amountCarbohydrates}
-        amountFat={amountFat}
-        amountFiber={amountFiber}
-        amountVitaminC={amountVitaminC}
-        amountCalcium={amountCalcium}
-        amountPotassium={amountPotassium}
-      />
+      <NutritionTable nutritions={nutritions} />
     </div>
   );
 }
