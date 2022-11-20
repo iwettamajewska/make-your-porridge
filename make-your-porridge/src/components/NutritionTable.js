@@ -11,8 +11,6 @@ const measures = {
   pottassium: "mg",
 };
 
-const testText = <p>test test test</p>;
-
 const NutritionTable = ({ nutritions }) => {
   const nutritionsKeys = Object.keys(nutritions);
   console.log(nutritions);

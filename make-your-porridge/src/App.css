@@ -24,7 +24,6 @@ html {
 
 .container {
   background-color: rgba(200, 204, 212, 0.2);
-  /* margin: 0 auto; */
   text-align: center;
 }
 
@@ -56,8 +55,6 @@ table {
   border-collapse: collapse;
   max-width: 900px;
   width: 100%;
-  /* margin: 2rem auto; */
-  /* text-align: center; */
   margin: 0 auto;
 }
 
@@ -78,20 +75,6 @@ tr {
   margin: 10rem;
 }
 
-/* .image-container {
-  position: relative;
-} */
-
-/* .relative {
-  margin: 5rem;
-  position: relative;
-  z-index: 4;
-} zzzzzzzzzzzzz*/
-
-/* .absolute {
-  position: absolute;
-} */
-
 .ingredient-option {
   accent-color: rgba(182, 161, 161);
 }
@@ -103,138 +86,121 @@ tr {
 }
 
 .worktop-conainer {
-  /* position: relative; */
-  /* display: flex; */
-  align-items: center;
+  position: relative;
 }
 
 .oatmeal {
   width: 30vw;
-  z-index: 1;
+  aspect-ratio: 1;
   filter: brightness(1.1);
-  /* position: absolute; */
-  position: relative;
-  /* top: 4vh;
-  left: 33vw; */
+  position: absolute;
+  top: 20px;
+  left: calc(50vw - (30vw / 2));
+  background-size: cover;
+  background-image: url("./images/oatmeal.png");
   filter: grayscale(35%);
   box-shadow: 0px 0px 0px 0px rgba(66, 68, 90, 1);
 }
 
-/* /////INGREDIENTS///// */
-.banana {
-  width: 15vw;
-  z-index: 5;
+.banana,
+.dactyles,
+.blackberries,
+.blueberries,
+.cranberries,
+.grapes,
+.kiwi,
+.raspberries,
+.rice-milk,
+.tangerine,
+.watermelon,
+.walnut,
+.yoghurt {
   position: absolute;
-  /* top: 14rem; */
-  top: 12vh;
-  left: 42vw;
-  filter: grayscale(35%);
+  top: 20%;
+  filter: grayscale(15%);
+}
+
+.banana {
+  width: 35%;
+  z-index: 5;
+  left: 40%;
 }
 
 .dactyles {
-  width: 12vw;
-  position: absolute;
+  width: 42%;
   z-index: 9;
-  top: 33vh;
-  left: 38vw;
-  filter: grayscale(35%);
+  left: 38%;
 }
 
 .blackberries {
-  width: 15vw;
-  position: absolute;
+  width: 45%;
   z-index: 16;
-  top: 33vh;
-  left: 36vw;
-  filter: grayscale(35%);
+  left: 36%;
 }
 
 .blueberries {
-  width: 14vw;
-  position: absolute;
+  width: 44%;
   z-index: 15;
-  top: 24vh;
-  left: 37vw;
-  filter: grayscale(35%);
+  left: 37%;
 }
 
 .cranberries {
-  width: 9vw;
-  position: absolute;
+  width: 29%;
   z-index: 14;
-  top: 24vh;
-  left: 51vw;
+  left: 51%;
   transform: rotate(-10deg);
-  filter: grayscale(35%);
 }
 
 .grapes {
-  width: 11vw;
-  position: absolute;
+  width: 30%;
   z-index: 13;
-  top: 20vh;
-  left: 48vw;
+  left: 55%;
+  top: 40%;
 }
+
 .kiwi {
-  width: 16vw;
-  position: absolute;
+  width: 56%;
   z-index: 7;
-  top: 22vh;
-  left: 41vw;
+  left: 41%;
   filter: grayscale(35%);
 }
 
 .raspberries {
-  width: 16vw;
-  position: absolute;
+  width: 46%;
   z-index: 11;
-  top: 13vh;
-  left: 38vw;
-  filter: grayscale(35%);
+  left: 38%;
 }
 
 .rice-milk {
-  width: 25vw;
-  position: absolute;
+  width: 80%;
+  top: 10%;
+  left: 10%;
   z-index: 5;
-  top: 9vh;
-  left: 35vw;
-  filter: grayscale(35%);
 }
 
 .tangerine {
-  width: 14vw;
-  position: absolute;
+  width: 14%;
   z-index: 10;
-  top: 28vh;
-  left: 45vw;
+  left: 45%;
   filter: grayscale(35%);
 }
 
 .walnut {
-  width: 15vw;
-  position: absolute;
+  width: 50%;
+  left: 10%;
   z-index: 9;
-  top: 24vh;
-  left: 36vw;
   filter: grayscale(35%);
 }
 
 .watermelon {
-  width: 15vw;
-  position: absolute;
+  width: 15%;
   z-index: 8;
-  top: 24vh;
-  left: 45vw;
-  filter: grayscale(35%);
+  left: 45%;
 }
 
 .yoghurt {
-  width: 16vw;
-  position: absolute;
+  width: 50%;
+  left: 5%;
   z-index: 7;
-  top: 20vh;
-  left: 34vw;
   transform: rotate(-110deg);
-  filter: grayscale(35%);
 }
