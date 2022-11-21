@@ -16,14 +16,14 @@ const IngredientsList = ({ onChange, checked, noChecked }) => {
             value={item.name}
             checked={item.isChecked}
             noChecked={noChecked}
-            disabled={checkedElems.length >= 3 && !item.isChecked}
+            disabled={checkedElems.length >= 5 && !item.isChecked}
             onChange={() => onChange(item)}
             htmlFor={item.name}
             labelText={item.name}
             key={index}
           />
         ))}
-        {checkedElems.length >= 3 && (
+        {checkedElems.length >= 5 && (
           <p className="alert-text">Select only 3 ingredients</p>
         )}
       </form>

@@ -11,7 +11,7 @@ function App() {
 
   const calculateNutritions = (checkedElems) => {
     Object.keys(constantIngredient).map((nutrition) => {
-      setNutritions((prevState) => ({
+      return setNutritions((prevState) => ({
         ...prevState,
         [nutrition]: checkedElems.reduce((acc, item) => {
           return acc + item[nutrition];
