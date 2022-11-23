@@ -13,7 +13,6 @@ const measures = {
 
 const NutritionTable = ({ nutritions }) => {
   const nutritionsKeys = Object.keys(nutritions);
-  console.log(nutritions);
 
   const showTable =
     JSON.stringify(nutritions) !== JSON.stringify(constantIngredient) &&

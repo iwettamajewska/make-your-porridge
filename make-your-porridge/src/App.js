@@ -22,7 +22,6 @@ function App() {
 
   const handleOnChange = (item) => {
     item.isChecked = !item.isChecked;
-    console.log(item.isChecked);
 
     const checkedElems = ingredients.filter(
       (ingredients) => ingredients.isChecked === true
