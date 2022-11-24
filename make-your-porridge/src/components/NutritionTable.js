@@ -21,6 +21,7 @@ const NutritionTable = ({ nutritions }) => {
   return (
     <>
       {showTable && (
+        //<div className="wrapper">
         <div className="container-nutrition-data">
           <h3 className="your-porridge-contains-text">
             your porridge contains:
@@ -54,6 +55,7 @@ const NutritionTable = ({ nutritions }) => {
             </tbody>
           </table>
         </div>
+        //</div>
       )}
     </>
   );

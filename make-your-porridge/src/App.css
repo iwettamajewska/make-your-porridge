@@ -39,6 +39,23 @@ html {
   padding-bottom: 2rem;
 }
 
+.wrapper {
+  position: relative;
+}
+
+.container-nutrition-data {
+  position: relative;
+  top: -20px;
+  animation: slide 0.5s forwards;
+  width: 100%;
+}
+
+@keyframes slide {
+  100% {
+    top: 0;
+  }
+}
+
 label {
   padding-right: 1rem;
   padding-left: 0.5rem;
@@ -87,6 +104,10 @@ table td {
 
 tr {
   margin: 10rem;
+}
+
+.ingredient-option-wrapper {
+  display: inline-block;
 }
 
 .ingredient-option {

@@ -35,8 +35,10 @@ function App() {
     <div className="container">
       <h1 className="tittle-text">Make your perfect porridge</h1>
       <IngredientsList onChange={handleOnChange} bowl={bowl} />
-      <NutritionTable nutritions={nutritions} />
-      <ImageIngredients bowl={bowl} />
+      <div className="wrapper">
+        <NutritionTable nutritions={nutritions} />
+        <ImageIngredients bowl={bowl} />
+      </div>
     </div>
   );
 }

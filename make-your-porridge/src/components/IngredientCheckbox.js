@@ -8,7 +8,7 @@ const IngredientCheckbox = ({
   disabled,
 }) => {
   return (
-    <>
+    <span className="ingredient-option-wrapper">
       <input
         className="ingredient-option"
         name={name}
@@ -19,7 +19,7 @@ const IngredientCheckbox = ({
         disabled={disabled}
       />
       <label htmlFor={htmlFor}>{labelText}</label>
-    </>
+    </span>
   );
 };
 
