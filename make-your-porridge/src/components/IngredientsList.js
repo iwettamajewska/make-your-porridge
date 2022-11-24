@@ -24,7 +24,7 @@ const IngredientsList = ({ onChange, checked, noChecked }) => {
           />
         ))}
         {checkedElems.length >= 5 && (
-          <p className="alert-text">Select only 3 ingredients</p>
+          <p className="alert-text">Select only 5 ingredients</p>
         )}
       </form>
     </>

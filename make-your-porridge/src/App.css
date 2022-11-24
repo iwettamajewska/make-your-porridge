@@ -13,8 +13,8 @@ body {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   color: rgba(58, 30, 19, 1);
+  background-color: rgb(219, 223, 231);
 }
 
 html {
@@ -23,19 +23,20 @@ html {
 }
 
 .container {
-  background-color: rgba(200, 204, 212, 0.2);
+  background-color: rgb(219, 223, 231);
   text-align: center;
 }
 
 .tittle-text {
   padding: 2rem;
 }
-.choose-ingredients-text {
-  padding-bottom: 2rem;
-}
 
-.food-select {
-  margin: 2rem 0rem;
+.choose-ingredients-text,
+.food-select,
+.your-porridge-contains-text,
+.container-nutrition-data,
+.worktop {
+  padding-bottom: 2rem;
 }
 
 label {
@@ -43,13 +44,26 @@ label {
   padding-left: 0.5rem;
 }
 
-.your-porridge-contains-text {
-  padding: 2rem 0rem;
+.alert-text {
+  padding-top: 2rem;
+  color: rgb(165, 1, 1);
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.container-nutrition-data {
-  padding-bottom: 2rem;
+/* ////media//// */
+/* table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+th,
+td {
+  text-align: left;
+  display: flex;
+} */
+/* ////media/// */
 
 table {
   border-collapse: collapse;
@@ -68,7 +82,7 @@ table td {
 table th,
 table td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 tr {
@@ -203,4 +217,70 @@ tr {
   left: 5%;
   z-index: 7;
   transform: rotate(-110deg);
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  th,
+  td {
+    text-align: left;
+    display: flex;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* table {
+    border-collapse: collapse;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+  } */
+}
+
+/* table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  } */
+
+/* th,
+  td {
+    text-align: center;
+    display: flex;
+    flex-direction: block;
+    width: 100%;
+  } */
+
+/* table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    flex-direction: row;
+  } */
+
+/* table {
+    flex-wrap: wrap;
+  } */
+
+/* th,
+td {
+  min-height: 40px;
+  min-width: 8rem;
+} */
+
+/* table {
+  width: 80vw;
+} */
+
+/* width: 80vw */
+
+@media screen and (min-width: 1025px) {
 }
