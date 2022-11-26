@@ -106,8 +106,17 @@ tr {
   margin: 10rem;
 }
 
+.food-select {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 50vw;
+  margin: 0 auto;
+}
+
 .ingredient-option-wrapper {
   display: inline-block;
+  white-space: nowrap;
+  text-align: start;
 }
 
 .ingredient-option {
@@ -253,6 +262,10 @@ tr {
     display: flex;
     font-size: 0.8rem;
   }
+}
+
+.container {
+  background-color: green;
 }
 
 @media screen and (min-width: 769px) {
