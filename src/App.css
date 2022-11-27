@@ -34,6 +34,7 @@ html {
 .choose-ingredients-text,
 .food-select,
 .your-porridge-contains-text,
+.alert-text,
 .container-nutrition-data,
 .worktop {
   padding-bottom: 2rem;
@@ -45,7 +46,7 @@ html {
 
 .container-nutrition-data {
   position: relative;
-  top: -20px;
+  top: -1rem;
   animation: slide 0.5s forwards;
   width: 100%;
 }
@@ -62,11 +63,19 @@ label {
 }
 
 .alert-text {
-  padding-top: 2rem;
   color: rgb(165, 1, 1);
   font-size: 1.5rem;
   font-weight: 700;
+  /* transition-delay: 1s;
+  animation: slide 0.5s forwards;
+  animation-duration: 1s; */
 }
+
+/* @keyframes slide {
+  50% {
+    top: 0;
+  }
+} */
 
 /* ////media//// */
 /* table {
@@ -84,7 +93,7 @@ td {
 
 table {
   border-collapse: collapse;
-  max-width: 900px;
+  max-width: 56rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -98,7 +107,7 @@ table td {
 
 table th,
 table td {
-  border: 1px solid #ddd;
+  border: 0.06rem solid #ddd;
   padding: 0.5rem;
 }
 
@@ -108,7 +117,7 @@ tr {
 
 .food-select {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   width: 50vw;
   margin: 0 auto;
 }
@@ -138,12 +147,12 @@ tr {
   aspect-ratio: 1;
   filter: brightness(1.1);
   position: absolute;
-  top: 20px;
+  top: 1rem;
   left: calc(50vw - (30vw / 2));
   background-size: cover;
   background-image: url("./images/oatmeal.png");
   filter: grayscale(35%);
-  box-shadow: 0px 0px 0px 0px rgba(66, 68, 90, 1);
+  /* box-shadow: 0px 0px 0px 0px rgba(66, 68, 90, 1); */
 }
 
 .banana,
@@ -264,10 +273,6 @@ tr {
   }
 }
 
-.container {
-  background-color: green;
-}
-
 @media screen and (min-width: 769px) {
   /* table {
     border-collapse: collapse;
@@ -275,6 +280,14 @@ tr {
     width: 100%;
     margin: 0 auto;
   } */
+}
+
+@media screen and (min-width: 900px) {
+  .food-select {
+    grid-template-columns: auto auto auto auto;
+    width: 50vw;
+    margin: 0 auto;
+  }
 }
 
 /* table {
