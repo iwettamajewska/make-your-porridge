@@ -268,7 +268,7 @@ tr {
 }
 
 @media screen and (max-width: 768px) {
-  table {
+  /* table {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,7 +279,7 @@ tr {
     text-align: left;
     display: flex;
     font-size: 0.8rem;
-  }
+  } */
 }
 
 @media screen and (min-width: 540px) {
@@ -292,6 +292,7 @@ tr {
     width: 100%;
     margin: 0 auto;
   } */
+
   table {
     font-size: 0.8rem;
   }
@@ -300,44 +301,7 @@ tr {
 @media screen and (min-width: 900px) {
 }
 
-/* table {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  } */
-
-/* th,
-  td {
-    text-align: center;
-    display: flex;
-    flex-direction: block;
-    width: 100%;
-  } */
-
-/* table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    flex-direction: row;
-  } */
-
-/* table {
-    flex-wrap: wrap;
-  } */
-
-/* th,
-td {
-  min-height: 40px;
-  min-width: 8rem;
-} */
-
-/* table {
-  width: 80vw;
-} */
-
-/* width: 80vw */
+/* ///// MEDIA ONLY CHECHBOX ///// */
 
 @media screen and (min-width: 540px) {
   .ingredient-option-wrapper {
