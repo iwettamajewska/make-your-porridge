@@ -109,9 +109,9 @@ tr {
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
-  align-content: space-around;
+  align-content: center;
   flex-wrap: wrap;
-  width: 60%;
+  width: 300px;
 }
 
 .ingredient-option-wrapper {
@@ -267,6 +267,19 @@ tr {
   transform: rotate(-110deg);
 }
 
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+th,
+td {
+  text-align: left;
+  display: flex;
+  font-size: 0.8rem;
+}
+
 @media screen and (max-width: 768px) {
   /* table {
     display: flex;
@@ -286,15 +299,16 @@ tr {
 }
 
 @media screen and (min-width: 769px) {
-  /* table {
-    border-collapse: collapse;
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-  } */
-
   table {
-    font-size: 0.8rem;
+    display: table;
+  }
+  tr {
+    display: table-row;
+  }
+  th,
+  td {
+    display: table-cell;
+    text-align: center;
   }
 }
 
@@ -311,9 +325,18 @@ tr {
     text-align: start;
     width: 33%;
   }
+  .food-select {
+    width: 400px;
+  }
 }
 
-@media screen and (min-width: 605px) {
+@media screen and (min-width: 768px) {
+  /* .food-select {
+    width: 400px;
+  } */
+}
+
+/* @media screen and (min-width: 605px) {
   .food-select {
     width: 60%;
   }
@@ -371,4 +394,4 @@ tr {
   .food-select {
     width: 20%;
   }
-}
+} */
