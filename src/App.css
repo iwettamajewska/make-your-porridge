@@ -68,10 +68,6 @@ label {
   font-weight: 700;
   animation-name: opacity-alert;
   animation-duration: 0.5s;
-  /* animation: example 1.5s forwards; */
-  /* transition-delay: 1s;
-  animation: slide 0.5s forwards;
-  animation-duration: 1s; */
 }
 @keyframes opacity-alert {
   from {
@@ -82,30 +78,11 @@ label {
   }
 }
 
-/* @keyframes slide {
-  50% {
-    top: 0;
-  }
-} */
-
-/* ////media//// */
-/* table {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-th,
-td {
-  text-align: left;
-  display: flex;
-} */
-/* ////media/// */
+/* /// TABLE ///  */
 
 table {
   border-collapse: collapse;
-  max-width: 56rem;
-  width: 100%;
+  width: 80vw;
   margin: 0 auto;
 }
 
@@ -126,29 +103,23 @@ tr {
   margin: 10rem;
 }
 
-/* .food-select {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  width: 50vw;
-  margin: 0 auto;
-} */
+/* //// CHECKBOX ///// */
 
 .food-select {
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: space-around;
-  /* row-gap:
-  column-gap: */
-  /* align-items: center; */
   flex-wrap: wrap;
-  /* flex: 2; */
-  width: 70%;
+  width: 60%;
 }
 
 .ingredient-option-wrapper {
-  /* align-self: center; */
-  flex-basis: 33%;
-  /* width: 30vw; */
+  align-self: center;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: start;
+  width: 50%;
 }
 
 .ingredient-option-wrapper {
@@ -161,7 +132,7 @@ tr {
   accent-color: rgba(182, 161, 161);
 }
 
-/* ////////// */
+/* ///// IMAGES ///// */
 .worktop {
   width: 80vw;
   opacity: 0.9;
@@ -181,7 +152,6 @@ tr {
   background-size: cover;
   background-image: url("./images/oatmeal.png");
   filter: grayscale(35%);
-  /* box-shadow: 0px 0px 0px 0px rgba(66, 68, 90, 1); */
 }
 
 .banana,
@@ -313,11 +283,6 @@ tr {
 }
 
 @media screen and (min-width: 540px) {
-  /* .food-select {
-    grid-template-columns: auto auto;
-    width: 50vw;
-    margin: 0 auto;
-  } */
 }
 
 @media screen and (min-width: 769px) {
@@ -327,25 +292,12 @@ tr {
     width: 100%;
     margin: 0 auto;
   } */
+  table {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 900px) {
-  /* .food-select {
-    grid-template-columns: auto auto auto auto;
-    width: 50vw;
-    margin: 0 auto;
-  } */
-
-  /* .food-select {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex: 2;
-  }
-
-  .ingredient-option-wrapper {
-    width: 20%;
-  } */
 }
 
 /* table {
@@ -387,5 +339,72 @@ td {
 
 /* width: 80vw */
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 540px) {
+  .ingredient-option-wrapper {
+    align-self: center;
+    display: inline-block;
+    white-space: nowrap;
+    text-align: start;
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 605px) {
+  .food-select {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .food-select {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 726px) {
+  .food-select {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .food-select {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  table {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 910px) {
+  .food-select {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .food-select {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  .food-select {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1455px) {
+  .food-select {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1814px) {
+  .food-select {
+    width: 20%;
+  }
 }
