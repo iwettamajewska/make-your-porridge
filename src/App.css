@@ -28,9 +28,10 @@ html {
 }
 
 .tittle-text {
-  padding: 2rem;
+  padding-top: 2rem;
 }
 
+.tittle-text,
 .choose-ingredients-text,
 .food-select,
 .your-porridge-contains-text,
@@ -38,28 +39,6 @@ html {
 .container-nutrition-data,
 .worktop {
   padding-bottom: 2rem;
-}
-
-.wrapper {
-  position: relative;
-}
-
-.container-nutrition-data {
-  position: relative;
-  top: -1rem;
-  animation: slide 0.5s forwards;
-  width: 100%;
-}
-
-@keyframes slide {
-  100% {
-    top: 0;
-  }
-}
-
-label {
-  padding-right: 1rem;
-  padding-left: 0.5rem;
 }
 
 .alert-text {
@@ -78,7 +57,50 @@ label {
   }
 }
 
+/* //// CHECKBOX - INGREDIENTS ///// */
+
+.food-select {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 18.75rem;
+  background-color: rgba(182, 161, 161, 0.1);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ingredient-option-wrapper {
+  align-self: center;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: start;
+  width: 50%;
+}
+
+.ingredient-option {
+  accent-color: rgba(182, 161, 161);
+}
+
+.label-ingredient-option {
+  padding-left: 0.5rem;
+}
+
 /* /// TABLE ///  */
+.container-nutrition-data {
+  position: relative;
+  top: -1rem;
+  animation: slide 0.5s forwards;
+  width: 100%;
+}
+
+@keyframes slide {
+  100% {
+    top: 0;
+  }
+}
 
 table {
   border-collapse: collapse;
@@ -99,40 +121,7 @@ table td {
   padding: 0.5rem;
 }
 
-tr {
-  margin: 10rem;
-}
-
-/* //// CHECKBOX ///// */
-
-.food-select {
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
-  align-content: center;
-  flex-wrap: wrap;
-  width: 300px;
-}
-
-.ingredient-option-wrapper {
-  align-self: center;
-  display: inline-block;
-  white-space: nowrap;
-  text-align: start;
-  width: 50%;
-}
-
-.ingredient-option-wrapper {
-  display: inline-block;
-  white-space: nowrap;
-  text-align: start;
-}
-
-.ingredient-option {
-  accent-color: rgba(182, 161, 161);
-}
-
-/* ///// IMAGES ///// */
+/* ///// IMAGES - I still working on it ///// */
 .worktop {
   width: 80vw;
   opacity: 0.9;
@@ -280,43 +269,6 @@ td {
   font-size: 0.8rem;
 }
 
-@media screen and (max-width: 768px) {
-  /* table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  th,
-  td {
-    text-align: left;
-    display: flex;
-    font-size: 0.8rem;
-  } */
-}
-
-@media screen and (min-width: 540px) {
-}
-
-@media screen and (min-width: 769px) {
-  table {
-    display: table;
-  }
-  tr {
-    display: table-row;
-  }
-  th,
-  td {
-    display: table-cell;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 900px) {
-}
-
-/* ///// MEDIA ONLY CHECHBOX ///// */
-
 @media screen and (min-width: 540px) {
   .ingredient-option-wrapper {
     align-self: center;
@@ -326,72 +278,31 @@ td {
     width: 33%;
   }
   .food-select {
-    width: 400px;
+    width: 25rem;
   }
 }
 
-@media screen and (min-width: 768px) {
-  /* .food-select {
-    width: 400px;
-  } */
-}
-
-/* @media screen and (min-width: 605px) {
-  .food-select {
-    width: 60%;
-  }
-}
-
-@media screen and (min-width: 660px) {
-  .food-select {
-    width: 55%;
-  }
-}
-
-@media screen and (min-width: 726px) {
-  .food-select {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 810px) {
-  .food-select {
-    width: 45%;
-  }
-}
-
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 769px) {
   table {
-    font-size: 1rem;
+    display: table;
+  }
+  tr {
+    display: table-row;
+  }
+
+  th,
+  td {
+    display: table-cell;
+    text-align: center;
   }
 }
 
-@media screen and (min-width: 910px) {
-  .food-select {
-    width: 40%;
-  }
+.nutrition-name {
+  width: 6.25rem;
 }
 
-@media screen and (min-width: 1040px) {
-  .food-select {
-    width: 35%;
+@media screen and (min-width: 1025px) {
+  table {
+    max-width: 60rem;
   }
 }
-
-@media screen and (min-width: 1210px) {
-  .food-select {
-    width: 30%;
-  }
-}
-
-@media screen and (min-width: 1455px) {
-  .food-select {
-    width: 25%;
-  }
-}
-
-@media screen and (min-width: 1814px) {
-  .food-select {
-    width: 20%;
-  }
-} */

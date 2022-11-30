@@ -18,7 +18,9 @@ const IngredientCheckbox = ({
         onChange={onChange}
         disabled={disabled}
       />
-      <label htmlFor={htmlFor}>{labelText}</label>
+      <label className="label-ingredient-option" htmlFor={htmlFor}>
+        {labelText}
+      </label>
     </span>
   );
 };

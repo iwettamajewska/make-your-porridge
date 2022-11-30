@@ -8,7 +8,7 @@ const IngredientsList = ({ onChange, checked, noChecked }) => {
 
   return (
     <>
-      <h2 className="choose-ingredients-text">choose ingredients:</h2>
+      <h2 className="choose-ingredients-text">choose maximum 5 ingredients:</h2>
       <form className="food-select">
         {ingredients.map((item, index) => (
           <IngredientCheckbox
