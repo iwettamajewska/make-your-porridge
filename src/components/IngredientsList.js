@@ -1,7 +1,7 @@
 import IngredientCheckbox from "./IngredientCheckbox";
 import { ingredients } from "./data/ingredients";
 
-const IngredientsList = ({ onChange, checked, noChecked }) => {
+const IngredientsList = ({ onChange, noChecked }) => {
   const checkedElems = ingredients.filter(
     (ingredients) => ingredients.isChecked === true
   );

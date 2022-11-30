@@ -23,7 +23,6 @@ html {
 }
 
 .container {
-  background-color: rgb(219, 223, 231);
   text-align: center;
 }
 
@@ -33,7 +32,6 @@ html {
 
 .tittle-text,
 .choose-ingredients-text,
-.food-select,
 .your-porridge-contains-text,
 .alert-text,
 .container-nutrition-data,
@@ -73,9 +71,6 @@ html {
 }
 
 .ingredient-option-wrapper {
-  align-self: center;
-  display: inline-block;
-  white-space: nowrap;
   text-align: start;
   width: 50%;
 }
@@ -120,6 +115,10 @@ table td {
   border: 0.06rem solid #ddd;
   padding: 0.5rem;
 }
+
+/* .nutrition-name {
+  min-width: 5rem;
+} */
 
 /* ///// IMAGES - I still working on it ///// */
 .worktop {
@@ -271,10 +270,6 @@ td {
 
 @media screen and (min-width: 540px) {
   .ingredient-option-wrapper {
-    align-self: center;
-    display: inline-block;
-    white-space: nowrap;
-    text-align: start;
     width: 33%;
   }
   .food-select {
@@ -295,10 +290,6 @@ td {
     display: table-cell;
     text-align: center;
   }
-}
-
-.nutrition-name {
-  width: 6.25rem;
 }
 
 @media screen and (min-width: 1025px) {
