@@ -14,7 +14,7 @@ function App() {
       return setNutritions((prevState) => ({
         ...prevState,
         [nutrition]: checkedElems.reduce((acc, item) => {
-          return acc + item[nutrition];
+          return acc + item[nutrition] * item.chosenWeight;
         }, constantIngredient[nutrition]),
       }));
     });
@@ -31,10 +31,28 @@ function App() {
     setBowl(checkedElems);
   };
 
+  const handleOnChangeWeight = (item, weight) => {
+    const bowlItemKey = bowl.findIndex((i) => i.id === item.id);
+    const newBowl = [...bowl];
+    newBowl[bowlItemKey].chosenWeight = weight;
+
+    setBowl(newBowl);
+    calculateNutritions(newBowl);
+  };
+
   return (
     <div className="container">
       <h1 className="tittle-text">Make your perfect porridge</h1>
-      <IngredientsList onChange={handleOnChange} bowl={bowl} />
+      {/* <SelectOats
+      name={item.name}
+      options={item.options}
+      onChange={(e) => onChangeWeight(item, e.target.value)}
+      /> */}
+      <IngredientsList
+        onChange={handleOnChange}
+        onChangeWeight={handleOnChangeWeight}
+        bowl={bowl}
+      />
       <NutritionTable nutritions={nutritions} />
       <ImageIngredients bowl={bowl} />
     </div>

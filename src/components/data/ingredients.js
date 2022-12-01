@@ -7,11 +7,12 @@ export const constantIngredient = {
   vitaminC: 1118,
   calcium: 1115,
   pottassium: 1117,
-  // options: [
-  //   { id: 1, name: "3 spoon", weight: 0.015, unit: "g" },
-  //   { id: 2, name: "5 spoons", weight: 0.03, unit: "g" },
-  //   { id: 2, name: "7 spoons", weight: 0.045, unit: "g" },
-  // ],
+  chosenWeight: 0.015,
+  options: [
+    { id: 1, name: "3 spoon oats", weight: 0.03, unit: "g" },
+    { id: 2, name: "5 spoons oats", weight: 0.05, unit: "g" },
+    { id: 3, name: "7 spoons oats", weight: 0.07, unit: "g" },
+  ],
 };
 
 export const ingredients = [
@@ -28,10 +29,11 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
+    chosenWeight: 0.015,
     options: [
       { id: 1, name: "1 spoon", weight: 0.015, unit: "g" },
       { id: 2, name: "2 spoons", weight: 0.03, unit: "g" },
-      { id: 2, name: "2 spoons", weight: 0.045, unit: "g" },
+      { id: 3, name: "3 spoons", weight: 0.045, unit: "g" },
     ],
   },
   {
@@ -48,10 +50,11 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    chosenWeight: 0.01,
     options: [
       { id: 1, name: "1 spoon", weight: 0.01, unit: "g" },
       { id: 2, name: "2 spoons", weight: 0.02, unit: "g" },
-      { id: 2, name: "2 spoons", weight: 0.03, unit: "g" },
+      { id: 3, name: "2 spoons", weight: 0.03, unit: "g" },
     ],
   },
   {
@@ -68,10 +71,11 @@ export const ingredients = [
     calcium: 3,
     pottassium: 4,
     polyphenoles: 5,
+    chosenWeight: 0.33,
     options: [
       { id: 1, name: "1/3 glass", weight: 0.33, unit: "ml" },
       { id: 2, name: "1/2 glass", weight: 0.1, unit: "ml" },
-      { id: 2, name: "1 glass", weight: 0.2, unit: "ml" },
+      { id: 3, name: "1 glass", weight: 0.2, unit: "ml" },
     ],
   },
   {
@@ -87,10 +91,11 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
+    chosenWeight: 0.015,
     options: [
       { id: 1, name: "1 spoon", weight: 0.015, unit: "g" },
       { id: 2, name: "2 spoons", weight: 0.03, unit: "g" },
-      { id: 2, name: "3 spoons", weight: 0.045, unit: "g" },
+      { id: 3, name: "3 spoons", weight: 0.045, unit: "g" },
     ],
   },
   {
@@ -106,10 +111,11 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
+    chosenWeight: 0.02,
     options: [
       { id: 1, name: "2 grapes", weight: 0.02, unit: "g" },
       { id: 2, name: "4 grapes", weight: 0.04, unit: "g" },
-      { id: 2, name: "6 grapes", weight: 0.06, unit: "g" },
+      { id: 3, name: "6 grapes", weight: 0.06, unit: "g" },
     ],
   },
   {
@@ -125,10 +131,11 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
+    chosenWeight: 0.02,
     options: [
       { id: 1, name: "2 slices", weight: 0.02, unit: "g" },
       { id: 2, name: "4 slices", weight: 0.04, unit: "g" },
-      { id: 2, name: "6 slices", weight: 0.06, unit: "g" },
+      { id: 3, name: "6 slices", weight: 0.06, unit: "g" },
     ],
   },
   {
@@ -144,10 +151,11 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
+    chosenWeight: 0.01,
     options: [
       { id: 1, name: "2 fruits", weight: 0.01, unit: "g" },
       { id: 2, name: "4 fruits", weight: 0.02, unit: "g" },
-      { id: 2, name: "6 fruits", weight: 0.03, unit: "g" },
+      { id: 3, name: "6 fruits", weight: 0.03, unit: "g" },
     ],
   },
   {
@@ -163,10 +171,11 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
+    chosenWeight: 0.015,
     options: [
       { id: 1, name: "1 spoon", weight: 0.015, unit: "g" },
       { id: 2, name: "2 spoos", weight: 0.03, unit: "g" },
-      { id: 2, name: "3 spoons", weight: 0.045, unit: "g" },
+      { id: 3, name: "3 spoons", weight: 0.045, unit: "g" },
     ],
   },
   {
@@ -182,10 +191,11 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
+    chosenWeight: 0.015,
     options: [
       { id: 1, name: "1 spoon", weight: 0.015, unit: "g" },
       { id: 2, name: "2 spoons", weight: 0.03, unit: "g" },
-      { id: 2, name: "3 spoons", weight: 0.045, unit: "g" },
+      { id: 3, name: "3 spoons", weight: 0.045, unit: "g" },
     ],
   },
   {
@@ -201,10 +211,11 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
+    chosenWeight: 0.02,
     options: [
       { id: 1, name: "1 piece", weight: 0.02, unit: "g" },
       { id: 2, name: "2 pieces", weight: 0.04, unit: "g" },
-      { id: 2, name: "3 pieces", weight: 0.06, unit: "g" },
+      { id: 3, name: "3 pieces", weight: 0.06, unit: "g" },
     ],
   },
   {
@@ -220,10 +231,11 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
+    chosenWeight: 0.015,
     options: [
       { id: 1, name: "1 slice", weight: 0.015, unit: "g" },
       { id: 2, name: "2 slices", weight: 0.03, unit: "g" },
-      { id: 2, name: "3 slices", weight: 0.045, unit: "g" },
+      { id: 3, name: "3 slices", weight: 0.045, unit: "g" },
     ],
   },
   {
@@ -239,10 +251,11 @@ export const ingredients = [
     vitaminC: 2,
     calcium: 3,
     pottassium: 4,
+    chosenWeight: 0.015,
     options: [
       { id: 1, name: "1 spoon", weight: 0.015, unit: "g" },
       { id: 2, name: "2 spoons", weight: 0.03, unit: "g" },
-      { id: 2, name: "3 spoons", weight: 0.045, unit: "g" },
+      { id: 3, name: "3 spoons", weight: 0.045, unit: "g" },
     ],
   },
   {
@@ -258,10 +271,11 @@ export const ingredients = [
     vitaminC: 6,
     calcium: 9,
     pottassium: 1,
+    chosenWeight: 0.015,
     options: [
       { id: 1, name: "1 spoon", weight: 0.015, unit: "g" },
       { id: 2, name: "2 spoons", weight: 0.03, unit: "g" },
-      { id: 2, name: "3 spoons", weight: 0.045, unit: "g" },
+      { id: 3, name: "3 spoons", weight: 0.045, unit: "g" },
     ],
   },
 ];

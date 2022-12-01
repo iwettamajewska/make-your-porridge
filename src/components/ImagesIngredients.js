@@ -9,6 +9,7 @@ const ImageIngredients = ({ bowl }) => {
           {bowl.map((item, index) => (
             <img
               src={images[item.id]}
+              // src={images[`${item.id}${item.chosenWeight}`]}
               className={item.class}
               alt={item.class}
               key={index}

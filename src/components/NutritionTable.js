@@ -28,9 +28,17 @@ const NutritionTable = ({ nutritions }) => {
           <table className="nutrition-table">
             <thead>
               <tr className="nutrition-name-section">
-                {nutritionsKeys.map((nutrition, index) => {
+                {nutritionsKeys.slice(0, 8).map((nutrition, index) => {
+                  const maxWidthClass =
+                    nutrition === "pottassium" || nutrition === "carbohydrates"
+                      ? "max-width-pottassium-carbohydrates"
+                      : "";
+
                   return (
-                    <th key={index} className="nutrition-name">
+                    <th
+                      key={index}
+                      className={`nutrition-name ${maxWidthClass}`}
+                    >
                       {nutrition === "vitaminC"
                         ? "Vitamin C"
                         : nutrition.charAt(0).toUpperCase() +
@@ -42,7 +50,7 @@ const NutritionTable = ({ nutritions }) => {
             </thead>
             <tbody>
               <tr className="nutrition-data-section">
-                {nutritionsKeys.map((nutrition, index) => {
+                {nutritionsKeys.slice(0, 8).map((nutrition, index) => {
                   return (
                     <td
                       key={index}

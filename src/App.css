@@ -63,7 +63,7 @@ html {
   justify-content: flex-start;
   align-content: center;
   flex-wrap: wrap;
-  width: 18.75rem;
+  min-width: 28rem;
   background-color: rgba(182, 161, 161, 0.1);
   padding: 1rem;
   border-radius: 1rem;
@@ -72,6 +72,7 @@ html {
 
 .ingredient-option-wrapper {
   text-align: start;
+  /* width: 50%; */
   width: 50%;
 }
 
@@ -81,6 +82,11 @@ html {
 
 .label-ingredient-option {
   padding-left: 0.5rem;
+}
+
+.select-portions-ingredients {
+  /* margin-right: 10rem; */
+  display: inline;
 }
 
 /* /// TABLE ///  */
@@ -114,6 +120,10 @@ table th,
 table td {
   border: 0.06rem solid #ddd;
   padding: 0.5rem;
+}
+
+.max-width-pottassium-carbohydrates {
+  background-color: blueviolet;
 }
 
 /* .nutrition-name {
