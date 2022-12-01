@@ -1,7 +1,6 @@
 import IngredientCheckbox from "./IngredientCheckbox";
 import { ingredients } from "./data/ingredients";
 import SelectPortionIngredients from "./SelectPortionIngredients";
-import SelectOats from "./SelectOats";
 
 const IngredientsList = ({ onChange, onChangeWeight, noChecked }) => {
   const checkedElems = ingredients.filter(
@@ -13,7 +12,7 @@ const IngredientsList = ({ onChange, onChangeWeight, noChecked }) => {
       <h2 className="choose-ingredients-text">choose maximum 5 ingredients:</h2>
       <form className="food-select">
         {ingredients.map((item, index) => (
-          <>
+          <div key={index}>
             <IngredientCheckbox
               name={item.name}
               value={item.name}
@@ -30,6 +29,7 @@ const IngredientsList = ({ onChange, onChangeWeight, noChecked }) => {
                 name={item.name}
                 options={item.options}
                 onChange={(e) => onChangeWeight(item, e.target.value)}
+                key={`${item.name}_portion_${item.id}`}
               />
             )}
             {/* {item.isChecked && (
@@ -39,7 +39,7 @@ const IngredientsList = ({ onChange, onChangeWeight, noChecked }) => {
                 onChange={(e) => onChangeWeight(item, e.target.value)}
               />
             )} */}
-          </>
+          </div>
         ))}
       </form>
       {checkedElems.length >= 5 && (

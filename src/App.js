@@ -4,9 +4,10 @@ import IngredientsList from "./components/IngredientsList";
 import { useState } from "react";
 import NutritionTable from "./components/NutritionTable";
 import { constantIngredient, ingredients } from "./components/data/ingredients";
+import SelectOats from "./components/SelectOats";
 
 function App() {
-  const [bowl, setBowl] = useState([]);
+  const [bowl, setBowl] = useState([constantIngredient]);
   const [nutritions, setNutritions] = useState({});
 
   const calculateNutritions = (checkedElems) => {
@@ -31,11 +32,22 @@ function App() {
     setBowl(checkedElems);
   };
 
+  const handleOnChangeWeightOats = (weight) => {
+    // setBowl(constantIngredient);
+  };
+
   const handleOnChangeWeight = (item, weight) => {
+    console.log("hey");
     const bowlItemKey = bowl.findIndex((i) => i.id === item.id);
     const newBowl = [...bowl];
+    console.log(newBowl[bowlItemKey]);
+    console.log(newBowl);
+    console.log(bowlItemKey);
     newBowl[bowlItemKey].chosenWeight = weight;
 
+    console.log(bowl);
+    console.log(item);
+    console.log(weight);
     setBowl(newBowl);
     calculateNutritions(newBowl);
   };
@@ -43,11 +55,12 @@ function App() {
   return (
     <div className="container">
       <h1 className="tittle-text">Make your perfect porridge</h1>
-      {/* <SelectOats
-      name={item.name}
-      options={item.options}
-      onChange={(e) => onChangeWeight(item, e.target.value)}
-      /> */}
+      <SelectOats
+        // name={item.name}
+        options={constantIngredient.options}
+        // onChangeWeightOats={(e) => onChangeWeight(item, e.target.value)}
+        onChangeWeightOats={(e) => handleOnChangeWeight(constantIngredient, e)}
+      />
       <IngredientsList
         onChange={handleOnChange}
         onChangeWeight={handleOnChangeWeight}

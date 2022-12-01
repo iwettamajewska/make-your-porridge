@@ -1,4 +1,7 @@
 export const constantIngredient = {
+  name: "oats",
+  id: "oats",
+  class: "oats",
   calories: 1112,
   protein: 1113,
   carbohydrates: 1116,
@@ -7,7 +10,7 @@ export const constantIngredient = {
   vitaminC: 1118,
   calcium: 1115,
   pottassium: 1117,
-  chosenWeight: 0.015,
+  chosenWeight: 0.03,
   options: [
     { id: 1, name: "3 spoon oats", weight: 0.03, unit: "g" },
     { id: 2, name: "5 spoons oats", weight: 0.05, unit: "g" },
