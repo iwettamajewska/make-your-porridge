@@ -58,21 +58,39 @@ html {
 /* //// CHECKBOX - INGREDIENTS ///// */
 
 .food-select {
-  margin: 0 auto;
-  display: flex;
+  /* margin: 0 auto; */
+  /* display: flex;
   justify-content: flex-start;
-  align-content: center;
-  flex-wrap: wrap;
-  min-width: 28rem;
-  background-color: rgba(182, 161, 161, 0.1);
+  align-content: center; */
+  /* flex-wrap: wrap; */
+  /* min-width: 28rem; */
+  /* background-color: rgba(182, 161, 161, 0.1);
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 1rem; */
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
   margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.2rem;
+  /* justify-self: start; */
+  /* grid-auto-columns: 10rem; */
+  column-gap: 10px;
+  /* justify-self: center; */
+}
+
+.justify-self-start {
+  display: grid;
+  /* grid-row: row 1; */
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: space-between; */
+  justify-self: center;
 }
 
 .ingredient-option-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   text-align: start;
-  /* width: 50%; */
   width: 50%;
 }
 
@@ -82,9 +100,18 @@ html {
 
 .label-ingredient-option {
   padding-left: 0.5rem;
+  width: 4.5rem;
+
+  /* padding-right: 2rem; */
+}
+.select-oats,
+.label-ingredient-option,
+.select-portions-ingredients {
+  font-size: 0.8rem;
 }
 
 .select-portions-ingredients {
+  width: 5rem;
   /* margin-right: 10rem; */
   /* display: inline; */
 }
@@ -279,11 +306,17 @@ td {
 }
 
 @media screen and (min-width: 540px) {
-  .ingredient-option-wrapper {
+  /* .ingredient-option-wrapper {
     width: 33%;
+  }  */
+
+  .select-oats,
+  .label-ingredient-option,
+  .select-portions-ingredients {
+    font-size: 0.8rem;
   }
   .food-select {
-    width: 25rem;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

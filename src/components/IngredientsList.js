@@ -12,7 +12,7 @@ const IngredientsList = ({ onChange, onChangeWeight, noChecked }) => {
       <h2 className="choose-ingredients-text">choose maximum 5 ingredients:</h2>
       <form className="food-select">
         {ingredients.map((item, index) => (
-          <div key={index}>
+          <div className="justify-self-start" key={index}>
             <IngredientCheckbox
               name={item.name}
               value={item.name}

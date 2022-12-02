@@ -6,7 +6,7 @@ const SelectOats = ({ name, options, onChangeWeightOats }) => {
   return (
     <>
       <p>choose portion of oats</p>
-      <select onChange={onChangeWeightOats}>
+      <select className="select-oats" onChange={onChangeWeightOats}>
         {options.map((option) => (
           <option key={`${name}_portion_${option.id}`} value={option.weight}>
             {option.name}
