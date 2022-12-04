@@ -64,9 +64,9 @@ html {
   align-content: center; */
   /* flex-wrap: wrap; */
   /* min-width: 28rem; */
-  /* background-color: rgba(182, 161, 161, 0.1);
+  background-color: rgba(182, 161, 161, 0.1);
   padding: 1rem;
-  border-radius: 1rem; */
+  /* border-radius: 1rem; */
   /* padding-left: 2rem;
   padding-right: 2rem; */
   margin-bottom: 2rem;
@@ -77,6 +77,10 @@ html {
   /* grid-auto-columns: 10rem; */
   column-gap: 10px;
   /* justify-self: center; */
+  /* margin-left: 2rem;
+  margin-right: 2rem; */
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .justify-self-start {
@@ -109,6 +113,16 @@ html {
 .select-portions-ingredients {
   font-size: 0.8rem;
 }
+
+.ingredient-option,
+.label-ingredient-option,
+.ingredient-option-wrapper,
+.select-portions-ingredients,
+.label-ingredient-option {
+  /* height: 1.5rem; */
+  align-items: center;
+}
+/* hmmm? */
 
 .select-portions-ingredients {
   width: 5rem;

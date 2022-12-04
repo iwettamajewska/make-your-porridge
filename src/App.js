@@ -32,10 +32,6 @@ function App() {
     setBowl(checkedElems);
   };
 
-  const handleOnChangeWeightOats = (weight) => {
-    // setBowl(constantIngredient);
-  };
-
   const handleOnChangeWeight = (item, weight) => {
     console.log("hey");
     const bowlItemKey = bowl.findIndex((i) => i.id === item.id);
