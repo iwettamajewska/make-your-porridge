@@ -96,6 +96,7 @@ html {
   grid-template-columns: 1fr 1fr;
   text-align: start;
   width: 50%;
+  min-height: 1.2rem;
 }
 
 .ingredient-option {
@@ -113,16 +114,6 @@ html {
 .select-portions-ingredients {
   font-size: 0.8rem;
 }
-
-.ingredient-option,
-.label-ingredient-option,
-.ingredient-option-wrapper,
-.select-portions-ingredients,
-.label-ingredient-option {
-  /* height: 1.5rem; */
-  align-items: center;
-}
-/* hmmm? */
 
 .select-portions-ingredients {
   width: 5rem;

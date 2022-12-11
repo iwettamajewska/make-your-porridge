@@ -55,6 +55,9 @@ function App() {
         // name={item.name}
         options={constantIngredient.options}
         // onChangeWeightOats={(e) => onChangeWeight(item, e.target.value)}
+        // onChangeWeightOats={(e) =>
+        //   handleOnChangeWeight(constantIngredient, e.target.value)
+        // }
         onChangeWeightOats={(e) =>
           handleOnChangeWeight(constantIngredient, e.target.value)
         }
