@@ -268,7 +268,7 @@ export const ingredients = [
     isChecked: false,
     calories: 225,
     protein: 10,
-    carbohydrates: 13,
+    carbohydrates: 13333,
     fat: 2,
     fiber: 3,
     vitaminC: 6,

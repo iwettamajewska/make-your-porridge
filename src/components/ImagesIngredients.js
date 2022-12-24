@@ -1,5 +1,7 @@
 import { images, worktopImage } from "../images/images";
 
+const sizePortions = ["small-portion", "medium-portion", "large-portion"];
+
 const ImageIngredients = ({ bowl }) => {
   return (
     <div className="image-container">
@@ -23,8 +25,9 @@ const ImageIngredients = ({ bowl }) => {
                 // src={images[`${item.id}${item.chosenWeight}`]}
                 // src={images[`${item.id}${options.id}`]}
                 // src={images[`${item.id}${options}`]}
-                className={item.class}
                 alt={item.class}
+                className={item.class}
+                // className= {`${item.class} ${for (let i = 0; i < 3; i++) {sizePortions}}`}
                 key={index}
               />
             ))}

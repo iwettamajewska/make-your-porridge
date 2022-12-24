@@ -55,7 +55,9 @@ const NutritionTable = ({ nutritions }) => {
                     <td
                       key={index}
                       className="nutrition-data"
-                    >{`${nutritions[nutrition]} ${measures[nutrition]}`}</td>
+                    >{`${Number.parseFloat(nutritions[nutrition]).toFixed(2)} ${
+                      measures[nutrition]
+                    }`}</td>
                   );
                 })}
               </tr>
