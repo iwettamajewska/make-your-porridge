@@ -29,14 +29,15 @@ function App() {
     );
 
     calculateNutritions(checkedElems);
-    setBowl(checkedElems);
+    // setBowl(checkedElems);
+    setBowl([constantIngredient, ...checkedElems]);
   };
 
   const handleOnChangeWeight = (item, weight) => {
     console.log("hey");
     const bowlItemKey = bowl.findIndex((i) => i.id === item.id);
     const newBowl = [...bowl];
-    console.log(newBowl[bowlItemKey]);
+    console.log(newBowl[bowlItemKey], "TUTAJ");
     console.log(newBowl);
     console.log(bowlItemKey);
     newBowl[bowlItemKey].chosenWeight = weight;

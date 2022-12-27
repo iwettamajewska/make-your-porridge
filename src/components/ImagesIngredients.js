@@ -1,8 +1,12 @@
 import { images, worktopImage } from "../images/images";
 
-const sizePortions = ["small-portion", "medium-portion", "large-portion"];
-
 const ImageIngredients = ({ bowl }) => {
+  const renderClassName = (id) => {
+    if (id === 1) return "small-portion";
+    if (id === 2) return "medium-portion";
+    if (id === 3) return "large-portion";
+  };
+
   return (
     <div className="image-container">
       <div className="worktop-conainer">
@@ -10,27 +14,28 @@ const ImageIngredients = ({ bowl }) => {
         <div className="oatmeal image">
           {bowl
             .filter((item) => item.id !== "oats")
-            .map((item, index, options) => (
-              <img
-                src={
-                  images[
-                    `${item.id}${
-                      item.options.find(
-                        (op) => op.weight === +item.chosenWeight
-                      )?.id
-                    }`
-                  ]
-                }
-                // src={images[item.id]}
-                // src={images[`${item.id}${item.chosenWeight}`]}
-                // src={images[`${item.id}${options.id}`]}
-                // src={images[`${item.id}${options}`]}
-                alt={item.class}
-                className={item.class}
-                // className= {`${item.class} ${for (let i = 0; i < 3; i++) {sizePortions}}`}
-                key={index}
-              />
-            ))}
+            .map((item, index) => {
+              const chosenItem = item.options.find(
+                (option) => option.weight === Number(item.chosenWeight)
+              );
+
+              return (
+                <img
+                  src={
+                    images[
+                      `${item.id}${
+                        item.options.find(
+                          (op) => op.weight === +item.chosenWeight
+                        )?.id
+                      }`
+                    ]
+                  }
+                  alt={item.class}
+                  className={`${item.class} ${renderClassName(chosenItem.id)}`}
+                  key={index}
+                />
+              );
+            })}
         </div>
       </div>
     </div>
