@@ -212,10 +212,12 @@ table td {
   }
 }
 
-.banana {
-  width: 35%;
+.banana.small-portion {
+  width: 50%;
   z-index: 5;
-  left: 40%;
+  left: 38%;
+  bottom: 10%;
+  transform: rotate(20deg);
 }
 
 .dactyles {
@@ -224,16 +226,20 @@ table td {
   left: 38%;
 }
 
-.blackberries {
-  width: 45%;
+.blackberries.small-portion {
+  width: 50%;
   z-index: 16;
-  left: 36%;
+  left: 7%;
+  top: 50%;
+  transform: rotate(10deg);
 }
 
-.blueberries {
+.blueberries.small-portion {
   width: 44%;
-  z-index: 15;
-  left: 37%;
+  z-index: 16;
+  left: 30%;
+  top: 50%;
+  transform: rotate(15deg);
 }
 
 .cranberries {
@@ -244,37 +250,43 @@ table td {
 }
 
 .grapes {
-  width: 30%;
+  width: 28%;
   z-index: 13;
-  left: 55%;
-  top: 40%;
+  left: 39%;
+  top: 30%;
+  transform: rotate(-70deg);
 }
 
 .kiwi {
   width: 56%;
-  z-index: 7;
-  left: 41%;
+  z-index: 2;
+  left: 30%;
+  top: 13%;
   filter: grayscale(35%);
 }
 
-.raspberries {
-  width: 46%;
+.raspberries.small-portion {
+  width: 48%;
   z-index: 11;
-  left: 38%;
+  left: 45%;
+  top: 60%;
+  transform: rotate(135deg);
 }
 
-.rice-milk {
-  width: 80%;
+.rice-milk.small-portion {
+  width: 85%;
   top: 10%;
-  left: 10%;
+  left: 5%;
   z-index: 5;
 }
 
-.tangerine {
-  width: 14%;
+.tangerine.small-portion {
+  width: 35%;
   z-index: 10;
-  left: 45%;
-  filter: grayscale(35%);
+  left: 15%;
+  top: 15%;
+  filter: grayscale(5%);
+  transform: rotate(-195deg);
 }
 
 .walnut {
